@@ -1,0 +1,15 @@
+navbar:
+  about: // sur moi
+  resume: // parcours
+  projects: // projets
+  contact: // contact
+
+welcome:
+  greeting: "Bonjour, je m'appelle"
+  name: "Javier Alejandro Fernandez"
+  sub_greeting: "mais vous pouvez m'appeller"
+  short_name: "Alex"
+  title: "Je suis Ingénieur en Mécatronique & IoT|"
+  contact_btn: "Écris moi"
+  download_cv_btn: "Tiens mon CV"
+

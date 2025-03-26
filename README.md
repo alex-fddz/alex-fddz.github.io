@@ -15,7 +15,7 @@ Personal portfolio & resume website.
 │ ├── js/ # JavaScript files
 │ ├── images/ # Photos & illustrations
 │ ├── fonts/ # Custom fonts
-│ ├── translations/ # Language files
+│── content/ # Content language files
 │── LICENSE # GPL License for website code
 │── LICENSE.images # CC License for images & photos
 │── README.md # Documentation file

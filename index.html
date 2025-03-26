@@ -23,11 +23,22 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
             <a class="nav-link active" aria-current="page" href="#">// ~</a>
-            <a class="nav-link" href="#about">// about</a>
-            <a class="nav-link" href="#resume">// resume</a>
-            <a class="nav-link" href="#projects">// projects</a>
-            <a class="nav-link" href="#contact">// contact</a>
+            <a class="nav-link" href="#about" data-i18n="navbar.about"></a>
+            <a class="nav-link" href="#resume" data-i18n="navbar.resume"></a>
+            <a class="nav-link" href="#projects" data-i18n="navbar.projects"></a>
+            <a class="nav-link" href="#contact" data-i18n="navbar.contact"></a>
           </div>
+
+          <!-- Language switcher -->
+          <div class="dropdown">
+            <button id="lang-switcher" class="btn dropdown-toggle text-black" type="button" data-bs-toggle="dropdown" aria-expanded="false">[ ]</button>
+            <ul class="dropdown-menu" style="min-width: 10px">
+              <li><a class="dropdown-item" data-lang="en">en</a></li>
+              <li><a class="dropdown-item" data-lang="fr">fr</a></li>
+              <li><a class="dropdown-item" data-lang="es">es</a></li>
+            </ul>
+          </div>
+
         </div>
       </div>
     </nav>
@@ -36,13 +47,13 @@
     <div class="container vh-100">
       <div class="row h-100 justify-content-left align-items-center">
         <div class="col-12">
-          <h1>Hello, my name is</h1>
+          <h1 data-i18n="welcome.greeting"></h1>
           <h1 class="display-5">Javier Alejandro Fernandez</h1>
-          <h2 class="text-secondary">but you can call me Alex</h2>
-          <h2 class="my-3">I'm a Mechatronics & IoT Engineer|</h2>
+          <h2 class="text-secondary"><span data-i18n="welcome.sub_greeting"></span> <span data-i18n="welcome.short_name"></span></h2>
+          <h2 class="my-3" data-i18n="welcome.title"></h2>
           <div class="pt-3 d-grid gap-2 d-sm-flex justify-content-sm-left">
-            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Say hi</button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Get my CV</button>
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3" data-i18n="welcome.contact_btn"></button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4" data-i18n="welcome.download_cv_btn"></button>
           </div>
         </div>
       </div>
@@ -50,10 +61,12 @@
 
 
 
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml/dist/js-yaml.min.js"></script> <!-- Translations -->
+    <script src="assets/js/main.js"></script>
+
     <!-- The end. -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <!-- Include Popper separately: Enable dropdowns, popovers, or tooltips. -->
-    <!-- script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script -->
   </body>
 </html>
 
