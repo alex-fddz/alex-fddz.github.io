@@ -33,9 +33,9 @@
           <div class="dropdown">
             <button id="lang-switcher" class="btn dropdown-toggle text-black" type="button" data-bs-toggle="dropdown" aria-expanded="false">[ ]</button>
             <ul class="dropdown-menu" style="min-width: 10px">
-              <li><a class="dropdown-item" data-lang="en">en</a></li>
-              <li><a class="dropdown-item" data-lang="fr">fr</a></li>
-              <li><a class="dropdown-item" data-lang="es">es</a></li>
+              <li><a class="dropdown-item dropdown-lang" data-lang="en">en</a></li>
+              <li><a class="dropdown-item dropdown-lang" data-lang="fr">fr</a></li>
+              <li><a class="dropdown-item dropdown-lang" data-lang="es">es</a></li>
             </ul>
           </div>
 
@@ -53,7 +53,17 @@
           <h2 class="my-3" data-i18n="welcome.title"></h2>
           <div class="pt-3 d-grid gap-2 d-sm-flex justify-content-sm-left">
             <button type="button" class="btn btn-primary btn-lg px-4 gap-3" data-i18n="welcome.contact_btn"></button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4" data-i18n="welcome.download_cv_btn"></button>
+            <div class="btn-group"> <!-- Split dropdown button -->
+              <a id="getCVBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary fs-5 lh-base py-2 px-4" data-i18n="welcome.download_cv_btn"></a>
+              <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split flex-grow-0" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="downloads/FERNANDEZ_Javier_CV_EN.pdf" target="_blank" rel="noopener noreferrer">English</a></li>
+                <li><a class="dropdown-item" href="downloads/FERNANDEZ_Javier_CV_FR.pdf" target="_blank" rel="noopener noreferrer">Français</a></li>
+                <li><a class="dropdown-item" href="downloads/FERNANDEZ_Javier_CV_ES.pdf" target="_blank" rel="noopener noreferrer">Español</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

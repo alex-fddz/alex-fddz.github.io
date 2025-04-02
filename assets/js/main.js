@@ -22,6 +22,8 @@ async function loadYAML(lang) {
 
 function setContentLang(lang) {
   loadYAML(lang);
+  // Update "Get my CV" button so default is in selected language
+  document.getElementById("getCVBtn").href = "downloads/FERNANDEZ_Javier_CV_" + lang.toUpperCase() + ".pdf";
   localStorage.setItem("selectedLang", lang); // Save preference
   document.getElementById("lang-switcher").innerText = `[${lang}]`; // Set lang text
   // Update active class on dropdown items
@@ -41,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
   setContentLang(savedLang);
 
   // Add event listener for language selection
-  document.querySelectorAll(".dropdown-item").forEach(item => {
+  document.querySelectorAll(".dropdown-lang").forEach(item => {
     item.addEventListener("click", function (event) {
       event.preventDefault(); // Prevent jumping to top
       const selectedLang = this.getAttribute("data-lang");
