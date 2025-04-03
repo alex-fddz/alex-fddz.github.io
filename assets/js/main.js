@@ -28,9 +28,9 @@ function setContentLang(lang) {
   document.getElementById("lang-switcher").innerText = `[${lang}]`; // Set lang text
   // Update active class on dropdown items
   document.querySelectorAll(".dropdown-item").forEach(item => {
-    item.classList.remove("active"); // Remove "active" from all items
+    item.classList.remove("bg-dark", "text-white"); // Remove "active" from all items
     if (item.getAttribute("data-lang") === lang) {
-      item.classList.add("active"); // Add "active" to the selected item
+      item.classList.add("bg-dark", "text-white"); // Add "active" to the selected item
     }
   });
 }
