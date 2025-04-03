@@ -13,3 +13,17 @@ welcome:
   contact_btn: "Say hi"
   download_cv_btn: "Get my CV"
 
+about:
+  bio:
+    I am an IoT and Mechatronics Engineer specializing in embedded development
+    and Industry 4.0. As an R&D Engineer at IMT Atlantique, I work on IoT
+    protocols like SCHC and LoRaWAN, bridging academia and industry. With global
+    experience, a passion for open-source, and fluency in four languages, I also
+    enjoy hiking, photography, and DIY projects.
+
+contact:
+  title: Contact me
+
+footer:
+  msg: Let's build something cool together!
+

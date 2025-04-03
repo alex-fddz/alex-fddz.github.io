@@ -13,3 +13,17 @@ welcome:
   contact_btn: "Di hola"
   download_cv_btn: "Toma mi CV"
 
+about:
+  bio:
+    Soy un Ingeniero en IoT y Mecatrónica especializado en desarrollo embebido 
+    e Industria 4.0. Como Ingeniero de I+D en IMT Atlantique, trabajo en protocolos 
+    de IoT como SCHC y LoRaWAN, conectando el mundo académico con la industria. 
+    Con experiencia global, pasión por el código abierto y fluidez en cuatro 
+    idiomas, también disfruto del senderismo, la fotografía y los proyectos DIY.
+
+contact:
+  title: Contacto
+
+footer:
+  msg: Construyamos algo grande juntos.
+

@@ -13,3 +13,17 @@ welcome:
   contact_btn: "Écris moi"
   download_cv_btn: "Tiens mon CV"
 
+about:
+  bio:
+    Je suis ingénieur en IoT et mécatronique, spécialisé dans le développement embarqué 
+    et l'industrie 4.0. En tant qu'ingénieur R&D à l'IMT Atlantique, je travaille sur des 
+    protocoles IoT tels que SCHC et LoRaWAN, faisant le lien entre le monde académique et l'industrie. 
+    Avec une expérience internationale, une passion pour l'open-source et la maîtrise de quatre 
+    langues, j'apprécie également la randonnée, la photographie et les projets DIY.
+
+contact:
+  title: Me contacter
+
+footer:
+  msg: Ensemble, construisons des solutions innovantes.
+
