@@ -50,5 +50,18 @@ document.addEventListener("DOMContentLoaded", function () {
       setContentLang(selectedLang);
     });
   });
+
+  // Add event listener for collapsing skills accordions
+  document.querySelectorAll('.skills-accordion-collapse').forEach((el) => {
+    el.addEventListener('show.bs.collapse', function () {
+      document.querySelectorAll('.skills-accordion-collapse.show').forEach((openEl) => {
+        if (openEl !== el) {
+          new bootstrap.Collapse(openEl, {
+            toggle: false
+          }).hide();
+        }
+      });
+    });
+  });
 });
 
