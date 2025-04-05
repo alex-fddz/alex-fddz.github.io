@@ -21,6 +21,27 @@ about:
     Avec une expérience internationale, une passion pour l'open-source et la maîtrise de quatre 
     langues, j'apprécie également la randonnée, la photographie et les projets DIY.
 
+skills:
+  title: Ce que je maîtrise
+  0_label: Systèmes embarqués
+  0_desc: Solide expertise en Python et C/C++, familier avec divers environnements de développement.
+  1_label: IoT et Réseaux
+  1_desc: Connaissance approfondie des protocoles et des technologies de communication pour des environnements à ressources limitées.
+  2_label: GNU/Linux
+  2_desc: Très compétent dans les environnements Linux pour le développement et les tâches quotidiennes.
+  3_label: CAO et Prototypage
+  3_desc: Modélisation 2D et 3D, bonne maîtrise de l'impression 3D et des machines CNC en général.
+  4_label: Conception UI/UX
+  4_desc: Développement d'interfaces pour SCADA et HMI dans le cadre de l'industrie 4.0.
+  5_label: Gestion des données
+  5_desc: Gestion, analyse et administration des données IoT et des bases de données associées.
+  6_label: Communication et Collaboration
+  6_desc: Expérience en travail en équipe dans des environnements multiculturels grâce à une communication efficace et à la prise de parole en public.
+  7_label: Apprentissage et Pédagogie
+  7_desc: Capacité à maîtriser rapidement des concepts et à les enseigner efficacement à divers publics.
+  8_label: Et plus encore
+  8_desc: Photographie, conception graphique, rédaction... Je suis toujours en exploration et en apprentissage de nouvelles compétences.
+
 contact:
   title: Me contacter
 

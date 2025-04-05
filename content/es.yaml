@@ -21,6 +21,27 @@ about:
     Con experiencia global, pasión por el código abierto y fluidez en cuatro 
     idiomas, también disfruto del senderismo, la fotografía y los proyectos DIY.
 
+skills:
+  title: Áreas en las que destaco
+  0_label: Sistemas Embebidos
+  0_desc: Gran dominio de Python y C/C++, con experiencia en varios entornos de desarrollo.
+  1_label: IoT y Redes
+  1_desc: Amplio conocimiento de protocolos y tecnologías de comunicación para entornos con recursos limitados.
+  2_label: GNU/Linux
+  2_desc: Alta competencia en entornos Linux para desarrollo y tareas del día a día.
+  3_label: CAD y Prototipado
+  3_desc: Modelado 2D y 3D, con experiencia en impresión 3D y máquinas CNC en general.
+  4_label: Diseño UI/UX
+  4_desc: Desarrollo de interfaces para SCADA y HMI aplicadas a la Industria 4.0.
+  5_label: Gestión de Datos
+  5_desc: Manejo, análisis y administración de bases de datos relacionadas con IoT.
+  6_label: Comunicación y Colaboración
+  6_desc: Experiencia en entornos multiculturales mediante una comunicación eficaz y habilidades en oratoria y trabajo en equipo.
+  7_label: Aprendizaje y Pedagogía
+  7_desc: Capacidad para dominar conceptos rápidamente y enseñarlos de manera efectiva a diversas audiencias.
+  8_label: Y mucho más
+  8_desc: Fotografía, diseño gráfico, redacción... Siempre explorando y perfeccionando nuevas habilidades.
+
 contact:
   title: Contacto
 
