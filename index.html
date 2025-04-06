@@ -209,20 +209,26 @@
     <div id="resume" class="container col-xxl-12 my-5">
       <h1 class="display-5 lh-1 my-5 text-center py-3">My journey</h1>
 
-      <div class="container" style="max-width: 800px;">
-        <ul class="nav nav-pills nav-fill" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="exp-tab" data-bs-toggle="tab" data-bs-target="#exp-tab-pane" type="button" role="tab" aria-controls="exp-tab-pane" aria-selected="true">[X] Experience</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="edu-tab" data-bs-toggle="tab" data-bs-target="#edu-tab-pane" type="button" role="tab" aria-controls="edu-tab-pane" aria-selected="false">[X] Education</button>
-          </li>
-        </ul>
-        <div class="tab-content">
-          <div class="tab-pane fade show active" id="exp-tab-pane" role="tabpanel" aria-labelledby="exp-tab" tabindex="0">
+      <ul class="nav nav-pills justify-content-center" role="tablist" >
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="exp-tab" data-bs-toggle="tab" data-bs-target="#exp-tab-pane" type="button" role="tab" aria-controls="exp-tab-pane" aria-selected="true" style="min-width: 170px;">
+            <span class="fw-bold me-3">[>]</span><span>Experience</span>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="edu-tab" data-bs-toggle="tab" data-bs-target="#edu-tab-pane" type="button" role="tab" aria-controls="edu-tab-pane" aria-selected="false" style="min-width: 170px;">
+            <span class="fw-bold me-3">[^]</span><span>Education</span>
+          </button>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="exp-tab-pane" role="tabpanel" aria-labelledby="exp-tab" tabindex="0">
+
+          <div class="d-flex justify-content-center"> <!-- timeline wrapper for tab pane -->
 
             <!--This is the main container that contains the whole timeline.-->
-            <section class="design-section">
+            <div class="timeline-container">
               <div class="timeline">
 
                 <!--Well, The reason for this div is to fill space. 
@@ -235,59 +241,137 @@
                 <!--This is the class where the timeline graphics are 
                 housed in. Note that we have timeline-circle 
                 here for that pointer in timeline.-->
-                <div class="timeline-middle bg-secondary">
-                  <div class="timeline-circle bg-dark"></div>
+                <div class="timeline-middle">
+                  <div class="timeline-circle"></div>
                 </div>
 
-                <div class="timeline-left-mobile bg-secondary">
-                  <div class="timeline-circle bg-dark"></div>
+                <div class="timeline-left">
+                  <div class="timeline-circle"></div>
                 </div>
 
-                <div class="timeline-component timeline-content border">
-                  <h5>HTML</h5>
-                  <p>Some Text</p>
+                <div class="timeline-content">
+                  <h5>IoT R&D Engineer</h5>
+                  <div class="timeline-content-subtitle">IMT Atlantique - France</div>
+                  <div class="timeline-content-secondary">2024 - present</div>
                 </div>
 
-                <div class="timeline-left-mobile bg-secondary">
-                  <div class="timeline-circle bg-dark"></div>
+                <div class="timeline-left">
+                  <div class="timeline-circle"></div>
                 </div>
 
-                <div class="timeline-component timeline-content border">
-                  <h5>CSS</h5>
-                  <p>Some Text.</p>
+                <div class="timeline-content">
+                  <h5>Smart Factory Consulting Engineer</h5>
+                  <div class="timeline-content-subtitle">Independent - Colombia/Remote</div>
+                  <div class="timeline-content-secondary">2021 - 2023</div>
                 </div>
 
-                <div class="timeline-middle bg-secondary">
-                    <div class="timeline-circle bg-dark"></div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
                 </div>
 
                 <div class="timeline-empty"></div>
 
                 <div class="timeline-empty"></div>
 
-                <div class="timeline-middle bg-secondary">
-                  <div class="timeline-circle bg-dark"></div>
+                <div class="timeline-middle">
+                  <div class="timeline-circle"></div>
                 </div>
 
-                <div class="timeline-left-mobile bg-secondary">
-                  <div class="timeline-circle bg-dark"></div>
+                <div class="timeline-left">
+                  <div class="timeline-circle"></div>
                 </div>
 
+                <div class="timeline-content">
+                  <h5>Mechatronics Engineer</h5>
+                  <div class="timeline-content-subtitle">BANGRoute - Romania</div>
+                  <div class="timeline-content-secondary">2021 - 2022</div>
+                </div>
 
-                <div class="timeline-component timeline-content border">
-                  <h5>Javascript</h5>
-                  <p>Some Text.</p>
+                <div class="timeline-left">
+                  <div class="timeline-circle"></div>
+                </div>
+
+                <div class="timeline-content">
+                  <h5>Industrial Automation Project Engineer</h5>
+                  <div class="timeline-content-subtitle">ECON Tech - Mexico</div>
+                  <div class="timeline-content-secondary">2019 - 2021</div>
+                </div>
+
+                <div class="timeline-middle">
+                  <div class="timeline-circle"></div>
+                </div>
+
+                <div class="timeline-empty"></div>
+
+              </div>
+            </div> <!-- /timeline-container -->
+
+          </div>
+
+        </div>
+        <div class="tab-pane fade" id="edu-tab-pane" role="tabpanel" aria-labelledby="edu-tab" tabindex="1">
+
+          <div class="d-flex justify-content-center"> <!-- timeline wrapper for tab pane -->
+
+            <!--This is the main container that contains the whole timeline.-->
+            <div class="timeline-container">
+              <div class="timeline">
+
+                <div class="timeline-empty"></div>
+
+                <div class="timeline-middle">
+                  <div class="timeline-circle"></div>
+                </div>
+
+                <div class="timeline-left">
+                  <div class="timeline-circle"></div>
+                </div>
+
+                <div class="timeline-content">
+                  <h5>Engineering & Architecture for IoT</h5>
+                  <div class="timeline-content-subtitle">IMT Atlantique - MSc</div>
+                  <div class="timeline-content-secondary">2022 - 2024</div>
+                </div>
+
+                <div class="timeline-left">
+                  <div class="timeline-circle"></div>
+                </div>
+
+                <div class="timeline-content">
+                  <h5>Mechanical & Automation Engineering</h5>
+                  <div class="timeline-content-subtitle">INSA Rennes - International Exchange</div>
+                  <div class="timeline-content-secondary">2017 - 2018</div>
+                </div>
+
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+
+                <div class="timeline-empty"></div>
+
+                <div class="timeline-empty"></div>
+
+                <div class="timeline-middle">
+                  <div class="timeline-circle"></div>
+                </div>
+
+                <div class="timeline-left">
+                  <div class="timeline-circle"></div>
+                </div>
+
+                <div class="timeline-content">
+                  <h5>Mechatronics Engineering</h5>
+                  <div class="timeline-content-subtitle">Universidad Autonoma de Nuevo Leon - BSc</div>
+                  <div class="timeline-content-secondary">2014 - 2019</div>
                 </div>
 
               </div>
-            </section>
+            </div> <!-- /timeline-container -->
 
           </div>
-          <div class="tab-pane fade" id="edu-tab-pane" role="tabpanel" aria-labelledby="edu-tab" tabindex="1">
-            <iframe width="100%" height="342" src="https://www.youtube.com/embed/zqBKdqfeKXg?si=QwXMghsdp72n1rLk" title="Inauguration Presentation [FR]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-        </div> 
-      </div>
+
+        </div>
+      </div> 
 
     </div>
 
