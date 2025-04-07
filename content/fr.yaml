@@ -42,6 +42,36 @@ skills:
   8_label: Et plus encore
   8_desc: Photographie, conception graphique, rédaction... Je suis toujours en exploration et en apprentissage de nouvelles compétences.
 
+resume:
+  title: Mon parcours
+  experience: Expérience
+  education: Formation
+
+resume_exp:
+  0_title: Ingénieur Projet en Automatisation Industrielle
+  0_where: ECON Tech - Mexique
+  0_dates: 2019 - 2021
+  1_title: Ingénieur en Mécatronique
+  1_where: BANGRoute - Roumanie
+  1_dates: 2021 - 2022
+  2_title: Ingénieur Conseil Usine Intelligente
+  2_where: Indépendant - Colombie (à distance)
+  2_dates: 2021 - 2023
+  3_title: Ingénieur R&D IoT
+  3_where: IMT Atlantique - France
+  3_dates: 2024 - présent
+
+resume_edu:
+  0_title: Ingénierie en Mécatronique
+  0_where: Universidad Autónoma de Nuevo León - Licence
+  0_dates: 2013 - 2019
+  1_title: Génie Mécanique & Automatique
+  1_where: INSA Rennes - Échange International
+  1_dates: 2017 - 2018
+  2_title: Architecture et Ingénierie pour l’IoT
+  2_where: IMT Atlantique - Master
+  2_dates: 2022 - 2023
+
 contact:
   title: Me contacter
 

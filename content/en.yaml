@@ -42,6 +42,36 @@ skills:
   8_label: And much more
   8_desc: Photography, graphics manipulation, writing skills... I'm always exploring and mastering new crafts.
 
+resume:
+  title: My journey
+  experience: Experience
+  education: Education
+
+resume_exp:
+  0_title: Industrial Automation Project Engineer
+  0_where: ECON Tech - Mexico
+  0_dates: 2019 - 2021
+  1_title: Mechatronics Engineer
+  1_where: BANGRoute - Romania
+  1_dates: 2021 - 2022
+  2_title: Smart Factory Consulting Engineer
+  2_where: Independent - Colombia (Remote)
+  2_dates: 2021 - 2023
+  3_title: IoT R&D Engineer
+  3_where: IMT Atlantique - France
+  3_dates: 2024 - present
+
+resume_edu:
+  0_title: Mechatronics Engineering
+  0_where: Universidad Autonoma de Nuevo Leon - BSc
+  0_dates: 2013 - 2019
+  1_title: Mechanical & Automation Engineering
+  1_where: INSA Rennes - International Exchange
+  1_dates: 2017 - 2018
+  2_title: Architecture & Engineering for IoT
+  2_where: IMT Atlantique - MSc
+  2_dates: 2022 - 2023
+
 contact:
   title: Contact me
 
