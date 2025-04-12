@@ -10,10 +10,10 @@
     <link href="assets/css/styles.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#navbar">
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div class="container">
         <a class="navbar-brand font-mono fw-bold" href="#">~$_
           <!--img src="" alt="logo" height="40px"-->
@@ -72,7 +72,7 @@
     </section>
 
     <!-- About -->
-    <section id="about" class="container col-xxl-12 my-5">
+    <section id="about" class="container col-xxl-12 my-5" style="scroll-margin-top: 55px;">
       <div class="row align-items-center py-3"> 
         <div class="col-12 col-md-4 col-lg-3">
           <img src="assets/images/headshot.jpg" class="d-block mx-auto img-fluid rounded-circle" alt="me.jpg" width="250" height="250" loading="lazy">
@@ -90,7 +90,7 @@
     <div class="" style="height: 75px;"></div> <!-- divider -->
 
     <!-- Skills -->
-    <section id="skills" class="container col-xxl-12 my-5">
+    <section id="skills" class="container col-xxl-12 my-5" style="scroll-margin-top: 100px;">
       <h1 class="display-5 lh-1 my-5 text-center py-3" data-i18n="skills.title"></h1>
       <div class="row align-items-start">
         <div class="accordion col-md-6 col-lg-4 my-2" style="min-height: 3rem;"> <!-- accordion -->
@@ -207,7 +207,7 @@
     <div class="" style="height: 75px;"></div> <!-- divider -->
 
     <!-- Resume -->
-    <section id="resume" class="container col-xxl-12 my-5">
+    <section id="resume" class="container col-xxl-12 my-5" style="scroll-margin-top: 100px;">
       <h1 class="display-5 lh-1 my-5 text-center py-3" data-i18n="resume.title"></h1>
       <ul class="nav nav-pills justify-content-center" role="tablist" >
         <li class="nav-item" role="presentation">
@@ -300,7 +300,7 @@
     <div class="" style="height: 75px;"></div> <!-- divider -->
 
     <!-- Projects -->
-    <section id="projects" class="container scroll-mt-5 my-5 max-vh-100">
+    <section id="projects" class="container scroll-mt-5 my-5 max-vh-100" style="scroll-margin-top: 100px;">
       <h1 class="my-5 display-5 text-center" data-i18n="projects.title"><h1>
       <div class="row py-3">
         <div class="col-12 col-md-4 mb-3">
@@ -363,7 +363,7 @@
     <div class="" style="height: 75px;"></div> <!-- divider -->
 
     <!-- Contact -->
-    <section id="contact" class="container col-xxl-12 my-5">
+    <section id="contact" class="container col-xxl-12 my-5" style="scroll-margin-top: 55px;">
       <div class="row align-items-center py-3">
         <div class="col-12 col-md-6">
           <h1 class="display-5 lh-1 mb-3 text-center" data-i18n="contact.title"></h1>
@@ -382,6 +382,8 @@
         </div>
       </div>
     </section>
+
+    <div class="" style="height: 75px;"></div> <!-- divider -->
 
     <!-- Footer -->
     <div class="container">
