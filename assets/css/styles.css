@@ -1,3 +1,6 @@
+/* Timeline component styling -- inspired from Divyesh Kamalanaban's
+   CSS Timeline example (https://codepen.io/Divyesh-K/pen/YzxLQNz). */
+
 .timeline-container {
   display: flex;
   flex-direction: column;
@@ -73,5 +76,37 @@
   .timeline-left {
     display: none;
   }
+}
+/* End of CSS Timeline */
+
+/* Custom styling overrides: */
+
+.dropdown-menu .dropdown-item.active,
+.dropdown-menu .dropdown-item:active {
+  background-color: var(--bs-dark);
+}
+
+.accordion-button:not(.collapsed),
+.accordion-button:not(.collapsed):focus {
+  background-color: var(--bs-dark);
+  border-color: var(--bs-dark);
+  color: white;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0) invert(1);
+}
+
+.nav-pills .nav-link.active {
+  background-color: var(--bs-dark);
+}
+
+.nav-pills .nav-link {
+  color: var(--bs-dark);
 }
 
