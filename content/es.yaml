@@ -72,6 +72,14 @@ resume_edu:
   2_where: IMT Atlantique - Maestría
   2_dates: 2022 - 2023
 
+projects:
+  title: Lo que he creado
+  read_more: Leer más
+  see_all: Descubre todos mis proyectos
+  0_title: "Monitoreo de desempeño en comunicaciones UWB y BLE"
+  1_title: " Implementación de CORECONF: un caso de uso con OSCORE/EDHOC"
+  2_title: " Solución de métricas OEE para Industria 4.0"
+
 contact:
   title: Contacto
 

@@ -72,6 +72,14 @@ resume_edu:
   2_where: IMT Atlantique - MSc
   2_dates: 2022 - 2023
 
+projects:
+  title: Things I've worked on
+  read_more: Read More
+  see_all: See all my projects
+  0_title: "UWB and BLE communications performance monitoring"
+  1_title: "CORECONF implementation: an OSCORE/EDHOC use case"
+  2_title: "OEE Metrics solution for Industry 4.0"
+
 contact:
   title: Contact me
 
