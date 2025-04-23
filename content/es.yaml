@@ -76,10 +76,20 @@ resume_edu:
 projects:
   title: Lo que he creado
   read_more: Leer más
+  close: Cerrar
   see_all: Descubre todos mis proyectos
-  0_title: "Monitoreo de desempeño en comunicaciones UWB y BLE"
-  1_title: " Implementación de CORECONF: un caso de uso con OSCORE/EDHOC"
-  2_title: " Solución de métricas OEE para Industria 4.0"
+  uwb:
+    title: "Monitoreo de desempeño en comunicaciones UWB y BLE"
+    desc:
+      This is the project description.
+      </p><p>
+      This is <b>another paragraph</b>.
+  pycoreconf:
+    title: "Implementación de CORECONF: un caso de uso con OSCORE/EDHOC"
+    desc: This is the project description.
+  oee:
+    title: "Solución de métricas OEE para Industria 4.0"
+    desc: This is the project description.
 
 contact:
   title: Contacto

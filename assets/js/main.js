@@ -6,7 +6,8 @@ async function loadYAML(lang) {
   try {
     const response = await fetch(`content/${lang}.yaml`);
     const yamlText = await response.text();
-    const content = jsyaml.load(yamlText);
+    // const content = jsyaml.load(yamlText);
+    window.content = jsyaml.load(yamlText); // Expose content obj so it's accessible later (projects).
 
     document.querySelectorAll("[data-i18n]").forEach(el => {
       const key = el.getAttribute("data-i18n");
@@ -62,6 +63,17 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
     });
+  });
+
+  // Add event listener for updating project modal content
+  const projectModal = document.getElementById('projectModal');
+  projectModal.addEventListener('show.bs.modal', function (event) {
+    const button = event.relatedTarget;
+    const projectId = button.getAttribute('data-project-id');
+    const project = window.content['projects'][projectId];
+    document.getElementById('projectModalLabel').textContent = project['title'];
+    document.getElementById('projectModalImage').src = 'assets/images/' + projectId + '.jpg';
+    document.getElementById('projectModalDescription').innerHTML = project['desc'];
   });
 });
 

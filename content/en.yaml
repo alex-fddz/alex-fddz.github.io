@@ -76,10 +76,20 @@ resume_edu:
 projects:
   title: Things I've worked on
   read_more: Read More
+  close: Close
   see_all: See all my projects
-  0_title: "UWB and BLE communications performance monitoring"
-  1_title: "CORECONF implementation: an OSCORE/EDHOC use case"
-  2_title: "OEE Metrics solution for Industry 4.0"
+  uwb:
+    title: "UWB and BLE communications performance monitoring"
+    desc:
+      This is the project description.
+      </p><p>
+      This is <b>another paragraph</b>.
+  pycoreconf:
+    title: "CORECONF implementation: an OSCORE/EDHOC use case"
+    desc: This is the project description.
+  oee:
+    title: "OEE Metrics solution for Industry 4.0"
+    desc: This is the project description.
 
 contact:
   title: Contact me
