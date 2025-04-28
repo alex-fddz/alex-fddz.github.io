@@ -24,60 +24,92 @@ about:
 
 skills:
   title: Áreas en las que destaco
-  0_label: Sistemas Embebidos
-  0_desc: Gran dominio de Python y C/C++, con experiencia en varios entornos de desarrollo.
-  1_label: IoT y Redes
-  1_desc: Amplio conocimiento de protocolos y tecnologías de comunicación para entornos con recursos limitados.
-  2_label: GNU/Linux
-  2_desc: Alta competencia en entornos Linux para desarrollo y tareas del día a día.
-  3_label: CAD y Prototipado
-  3_desc: Modelado 2D y 3D, con experiencia en impresión 3D y máquinas CNC en general.
-  4_label: Diseño UI/UX
-  4_desc: Desarrollo de interfaces para SCADA y HMI aplicadas a la Industria 4.0.
-  5_label: Gestión de Datos
-  5_desc: Manejo, análisis y administración de bases de datos relacionadas con IoT.
-  6_label: Comunicación y Colaboración
-  6_desc: Experiencia en entornos multiculturales mediante una comunicación eficaz y habilidades en oratoria y trabajo en equipo.
-  7_label: Aprendizaje y Pedagogía
-  7_desc: Capacidad para dominar conceptos rápidamente y enseñarlos de manera efectiva a diversas audiencias.
-  8_label: Y mucho más
-  8_desc: Fotografía, diseño gráfico, redacción... Siempre explorando y perfeccionando nuevas habilidades.
+  0:
+    label: Sistemas Embebidos
+    desc:
+      Gran dominio de Python y C/C++, con experiencia en varios entornos de
+      desarrollo.
+  1:
+    label: IoT y Redes
+    desc:
+      Amplio conocimiento de protocolos y tecnologías de comunicación para
+      entornos con recursos limitados.
+  2:
+    label: GNU/Linux
+    desc:
+      Alta competencia en entornos Linux para desarrollo y tareas del día a día.
+  3:
+    label: CAD y Prototipado
+    desc:
+      Modelado 2D y 3D, con experiencia en impresión 3D y máquinas CNC en
+      general.
+  4:
+    label: Diseño UI/UX
+    desc:
+      Desarrollo de interfaces para SCADA y HMI aplicadas a la Industria 4.0.
+  5:
+    label: Gestión de Datos
+    desc:
+      Manejo, análisis y administración de bases de datos relacionadas con IoT.
+  6:
+    label: Comunicación y Colaboración
+    desc:
+      Experiencia en entornos multiculturales mediante una comunicación eficaz
+      y habilidades en oratoria y trabajo en equipo.
+  7:
+    label: Aprendizaje y Pedagogía
+    desc:
+      Capacidad para dominar conceptos rápidamente y enseñarlos de manera
+      efectiva a diversas audiencias.
+  8:
+    label: Y mucho más
+    desc:
+      Fotografía, diseño gráfico, redacción... Siempre explorando y
+      perfeccionando nuevas habilidades.
 
 resume:
   title: My trayectoria
-  experience: Experiencia
-  education: Educación
 
-resume_exp:
-  0_title: Ingeniero de Proyectos en Automatización Industrial
-  0_where: ECON Tech - México
-  0_dates: 2019 - 2021
-  1_title: Ingeniero en Mecatrónica
-  1_where: BANGRoute - Rumania
-  1_dates: 2021 - 2022
-  2_title: Ingeniero Consultor en Fábricas Inteligentes
-  2_where: Independiente - Colombia (Remoto)
-  2_dates: 2021 - 2023
-  3_title: Ingeniero de I+D en IoT
-  3_where: IMT Atlantique - Francia
-  3_dates: 2024 - presente
+  experience:
+    title: Experiencia
+    0:
+      title: Ingeniero de Proyectos en Automatización Industrial
+      where: ECON Tech - México
+      dates: 2019 - 2021
+    1:
+      title: Ingeniero en Mecatrónica
+      where: BANGRoute - Rumania
+      dates: 2021 - 2022
+    2:
+      title: Ingeniero Consultor en Fábricas Inteligentes
+      where: Independiente - Colombia (Remoto)
+      dates: 2021 - 2023
+    3:
+      title: Ingeniero de I+D en IoT
+      where: IMT Atlantique - Francia
+      dates: 2024 - presente
 
-resume_edu:
-  0_title: Ingeniería en Mecatrónica
-  0_where: Universidad Autónoma de Nuevo León - Licenciatura
-  0_dates: 2013 - 2019
-  1_title: Ingeniería Mecánica y de Automatización
-  1_where: INSA Rennes - Intercambio Internacional
-  1_dates: 2017 - 2018
-  2_title: Arquitectura e Ingeniería para IoT
-  2_where: IMT Atlantique - Maestría
-  2_dates: 2022 - 2023
+  education:
+    title: Educación
+    0:
+      title: Ingeniería en Mecatrónica
+      where: Universidad Autónoma de Nuevo León - Licenciatura
+      dates: 2013 - 2019
+    1:
+      title: Ingeniería Mecánica y de Automatización
+      where: INSA Rennes - Intercambio Internacional
+      dates: 2017 - 2018
+    2:
+      title: Arquitectura e Ingeniería para IoT
+      where: IMT Atlantique - Maestría
+      dates: 2022 - 2023
 
 projects:
   title: Lo que he creado
   read_more: Leer más
   close: Cerrar
   see_all: Descubre todos mis proyectos
+
   uwb:
     title: "Monitoreo de desempeño en comunicaciones UWB y BLE"
     desc:
@@ -110,7 +142,7 @@ projects:
       colaboré en un proyecto de investigación con un equipo de la
       <b>Universidad de Murcia</b>, explorando la aplicación de paradigmas de
       Software Defined Networking (SDN) en entornos con recursos computacionales
-      restringidos. El equipo identificó a CORECONF (CoAP Management Interface)
+      limitados. El equipo identificó a CORECONF (CoAP Management Interface)
       como una solución potencial para establecer contextos de seguridad entre
       dispositivos de red, pero carecía de herramientas y experiencia para probarlo.
       </p><p>
@@ -126,7 +158,7 @@ projects:
       de nuestro entorno usando redes y dispositivos de recursos limitados.
       Esto exige el desarrollo y adopción de protocolos de comunicación
       eficientes y ligeros. CORECONF, un protocolo de gestión de red para
-      entornos restringidos, ofrece una solución prometedora para la
+      entornos constriñidos, ofrece una solución prometedora para la
       configuración de dispositivos IoT. Este trabajo presenta pycoreconf,
       una implementación open-source de CORECONF, diseñada para probar el
       protocolo y hacerlo accesible a investigadores y desarrolladores. En
@@ -135,7 +167,7 @@ projects:
       establecer contextos de seguridad entre dispositivos IoT.</i>
       </p><p>
       <i>Palabras clave — CORECONF, IoT, SDN, CoAP, YANG, CBOR, OSCORE, EDHOC,
-      dispositivos, redes, entornos restringidos.</i>
+      dispositivos, redes, entornos constriñidos.</i>
 
   oee:
     title: "Solución de métricas OEE para Industria 4.0"

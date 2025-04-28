@@ -24,54 +24,85 @@ about:
 
 skills:
   title: Things I'm good at
-  0_label: Embedded Systems
-  0_desc: Strong expertise in Python and C/C++, familiar with several development environments.
-  1_label: IoT & Networks
-  1_desc: Strong knowledge of protocols and communication technologies for resource-constrained environments.
-  2_label: GNU/Linux
-  2_desc: Highly skilled in Linux environments for development and everyday tasks.
-  3_label: CAD & Prototyping
-  3_desc: 2D & 3D modeling, strong familiarity with 3D printing and CNC machines in general.
-  4_label: UI/UX Design
-  4_desc: Through SCADA and HMI design and development for the Industry 4.0.
-  5_label: Data management
-  5_desc: Handling and analyzing IoT-related data and database management.
-  6_label: Communication & Collaboration
-  6_desc: Experienced in providing value in multi-cultural environments through effective communication and public speaking.
-  7_label: Learning & Pedagogy
-  7_desc: Quickly mastering concepts and teaching them effectively to diverse audiences.
-  8_label: And much more
-  8_desc: Photography, graphics manipulation, writing skills... I'm always exploring and mastering new crafts.
+  0:
+    label: Embedded Systems
+    desc:
+      Strong expertise in Python and C/C++, familiar with several development
+      environments.
+  1:
+    label: IoT & Networks
+    desc:
+      Strong knowledge of protocols and communication technologies for
+      resource-constrained environments.
+  2:
+    label: GNU/Linux
+    desc:
+      Highly skilled in Linux environments for development and everyday tasks.
+  3:
+    label: CAD & Prototyping
+    desc:
+      2D & 3D modeling, strong familiarity with 3D printing and CNC machines in
+      general.
+  4:
+    label: UI/UX Design
+    desc:
+      Through SCADA and HMI design and development for the Industry 4.0.
+  5:
+    label: Data management
+    desc:
+      Handling and analyzing IoT-related data and database management.
+  6:
+    label: Communication & Collaboration
+    desc:
+      Experienced in providing value in multi-cultural environments through
+      effective communication and public speaking.
+  7:
+    label: Learning & Pedagogy
+    desc:
+      Quickly mastering concepts and teaching them effectively to diverse
+      audiences.
+  8:
+    label: And much more
+    desc:
+      Photography, graphics manipulation, writing skills... I'm always
+      exploring and mastering new crafts.
 
 resume:
   title: My journey
-  experience: Experience
-  education: Education
 
-resume_exp:
-  0_title: Industrial Automation Project Engineer
-  0_where: ECON Tech - Mexico
-  0_dates: 2019 - 2021
-  1_title: Mechatronics Engineer
-  1_where: BANGRoute - Romania
-  1_dates: 2021 - 2022
-  2_title: Smart Factory Consulting Engineer
-  2_where: Independent - Colombia (Remote)
-  2_dates: 2021 - 2023
-  3_title: IoT R&D Engineer
-  3_where: IMT Atlantique - France
-  3_dates: 2024 - present
+  experience:
+    title: Experience
+    0:
+      title: Industrial Automation Project Engineer
+      where: ECON Tech - Mexico
+      dates: 2019 - 2021
+    1:
+      title: Mechatronics Engineer
+      where: BANGRoute - Romania
+      dates: 2021 - 2022
+    2:
+      title: Smart Factory Consulting Engineer
+      where: Independent - Colombia (Remote)
+      dates: 2021 - 2023
+    3:
+      title: IoT R&D Engineer
+      where: IMT Atlantique - France
+      dates: 2024 - present
 
-resume_edu:
-  0_title: Mechatronics Engineering
-  0_where: Universidad Autonoma de Nuevo Leon - BSc
-  0_dates: 2013 - 2019
-  1_title: Mechanical & Automation Engineering
-  1_where: INSA Rennes - International Exchange
-  1_dates: 2017 - 2018
-  2_title: Architecture & Engineering for IoT
-  2_where: IMT Atlantique - MSc
-  2_dates: 2022 - 2023
+  education:
+    title: Education
+    0:
+      title: Mechatronics Engineering
+      where: Universidad Autonoma de Nuevo Leon - BSc
+      dates: 2013 - 2019
+    1:
+      title: Mechanical & Automation Engineering
+      where: INSA Rennes - International Exchange
+      dates: 2017 - 2018
+    2:
+      title: Architecture & Engineering for IoT
+      where: IMT Atlantique - MSc
+      dates: 2022 - 2023
 
 projects:
   title: Things I've worked on

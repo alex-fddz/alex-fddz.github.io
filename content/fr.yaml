@@ -24,54 +24,87 @@ about:
 
 skills:
   title: Ce que je maîtrise
-  0_label: Systèmes embarqués
-  0_desc: Solide expertise en Python et C/C++, familier avec divers environnements de développement.
-  1_label: IoT et Réseaux
-  1_desc: Connaissance approfondie des protocoles et des technologies de communication pour des environnements à ressources limitées.
-  2_label: GNU/Linux
-  2_desc: Très compétent dans les environnements Linux pour le développement et les tâches quotidiennes.
-  3_label: CAO et Prototypage
-  3_desc: Modélisation 2D et 3D, bonne maîtrise de l'impression 3D et des machines CNC en général.
-  4_label: Conception UI/UX
-  4_desc: Développement d'interfaces pour SCADA et HMI dans le cadre de l'industrie 4.0.
-  5_label: Gestion des données
-  5_desc: Gestion, analyse et administration des données IoT et des bases de données associées.
-  6_label: Communication et Collaboration
-  6_desc: Expérience en travail en équipe dans des environnements multiculturels grâce à une communication efficace et à la prise de parole en public.
-  7_label: Apprentissage et Pédagogie
-  7_desc: Capacité à maîtriser rapidement des concepts et à les enseigner efficacement à divers publics.
-  8_label: Et plus encore
-  8_desc: Photographie, conception graphique, rédaction... Je suis toujours en exploration et en apprentissage de nouvelles compétences.
+  0:
+    label: Systèmes embarqués
+    desc:
+      Solide expertise en Python et C/C++, familier avec divers environnements
+      de développement.
+  1:
+    label: IoT et Réseaux
+    desc:
+      Connaissance approfondie des protocoles et des technologies de
+      communication pour des environnements à ressources limitées.
+  2:
+    label: GNU/Linux
+    desc:
+      Très compétent dans les environnements Linux pour le développement et les
+      tâches quotidiennes.
+  3:
+    label: CAO et Prototypage
+    desc:
+      Modélisation 2D et 3D, bonne maîtrise de l'impression 3D et des machines CNC en
+      général.
+  4:
+    label: Conception UI/UX
+    desc:
+      Développement d'interfaces pour SCADA et HMI dans le cadre de l'industrie 4.0.
+  5:
+    label: Gestion des données
+    desc:
+      Gestion, analyse et administration des données IoT et des bases de données
+      associées.
+  6:
+    label: Communication et Collaboration
+    desc:
+      Expérience en travail en équipe dans des environnements multiculturels grâce à
+      une communication efficace et à la prise de parole en public.
+  7:
+    label: Apprentissage et Pédagogie
+    desc:
+      Capacité à maîtriser rapidement des concepts et à les enseigner efficacement à
+      divers publics.
+  8:
+    label: Et plus encore
+    desc:
+      Photographie, conception graphique, rédaction... Je suis toujours en
+      exploration et en apprentissage de nouvelles compétences.
 
 resume:
   title: Mon parcours
-  experience: Expérience
-  education: Formation
 
-resume_exp:
-  0_title: Ingénieur Projet en Automatisation Industrielle
-  0_where: ECON Tech - Mexique
-  0_dates: 2019 - 2021
-  1_title: Ingénieur en Mécatronique
-  1_where: BANGRoute - Roumanie
-  1_dates: 2021 - 2022
-  2_title: Ingénieur Conseil Usine Intelligente
-  2_where: Indépendant - Colombie (à distance)
-  2_dates: 2021 - 2023
-  3_title: Ingénieur R&D IoT
-  3_where: IMT Atlantique - France
-  3_dates: 2024 - présent
+  experience:
+    title: Expérience
+    0:
+      title: Ingénieur Projet en Automatisation Industrielle
+      where: ECON Tech - Mexique
+      dates: 2019 - 2021
+    1:
+      title: Ingénieur en Mécatronique
+      where: BANGRoute - Roumanie
+      dates: 2021 - 2022
+    2:
+      title: Ingénieur Conseil Usine Intelligente
+      where: Indépendant - Colombie (à distance)
+      dates: 2021 - 2023
+    3:
+      title: Ingénieur R&D IoT
+      where: IMT Atlantique - France
+      dates: 2024 - présent
 
-resume_edu:
-  0_title: Ingénierie en Mécatronique
-  0_where: Universidad Autónoma de Nuevo León - Licence
-  0_dates: 2013 - 2019
-  1_title: Génie Mécanique & Automatique
-  1_where: INSA Rennes - Échange International
-  1_dates: 2017 - 2018
-  2_title: Architecture et Ingénierie pour l’IoT
-  2_where: IMT Atlantique - Master
-  2_dates: 2022 - 2023
+  education:
+    title: Formation
+    0:
+      title: Ingénierie en Mécatronique
+      where: Universidad Autónoma de Nuevo León - Licence
+      dates: 2013 - 2019
+    1:
+      title: Génie Mécanique & Automatique
+      where: INSA Rennes - Échange International
+      dates: 2017 - 2018
+    2:
+      title: Architecture et Ingénierie pour l’IoT
+      where: IMT Atlantique - Master
+      dates: 2022 - 2023
 
 projects:
   title: Quelques réalisations
