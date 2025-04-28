@@ -78,18 +78,98 @@ projects:
   read_more: Read More
   close: Close
   see_all: See all my projects
+
   uwb:
     title: "UWB and BLE communications performance monitoring"
     desc:
-      This is the project description.
+      During my master studies internship at <b>STMicroelectronics</b>, I
+      proposed, developed and integrated a metrics system that allowed the
+      team's developers to monitor the performance of their solution, involving
+      the processing, transmission, and reception of Ultra-Wide Band (UWB) and
+      Bluetooth Low-Energy (BLE) messages.
       </p><p>
-      This is <b>another paragraph</b>.
+      The development of the project involved the study and understanding of
+      the complete code base in <code>C</code> for <code>STM32</code> platforms,
+      for which I provided a flow diagram visualization (greatly appreciated by
+      the team). I worked directly with the solution stack to identify and save
+      relevant Key Performance Indicators (KPI). The data was saved into a local
+      <code>InfluxDB</code> database during the automated integration tests
+      using separate library written in <code>Python</code>.
+      </p><p>
+      Finally, I designed and integrated a comprehensive dashboard using
+      <code>Grafana</code>, and set up automatic email alerts to notify the team
+      members about performance degradations past a given threshold. As a
+      result, the solution provided valuable insights for logic improvement
+      opportunities, as well as confidence for the team to develop with ease,
+      knowing performance issues would be surfaced automatically.
+
   pycoreconf:
     title: "CORECONF implementation: an OSCORE/EDHOC use case"
-    desc: This is the project description.
+    desc:
+      As part of my master's studies in IoT at <b>IMT Atlantique</b>, I
+      collaborated on a research project with a team from <b>Universidad de
+      Murcia</b>, which explored the application of Software Defined Networking
+      (SDN) paradigms in resource-constrained environments. The team identified
+      CORECONF (CoAP Management Interface) as a potential solution to establish
+      a security context among network devices, but lacked the expertise and
+      tools to test it.
+      </p><p>
+      The project involved researching the protocol and understanding all
+      relevant technologies, prototyping solutions, and integrating the final
+      solution, which we published as <a
+      href="https://github.com/alex-fddz/pycoreconf">pycoreconf</a>, into a
+      containerized environment as a Proof of Concept. The project demanded good
+      multicultural communication skills and culminated in a conference paper
+      accepted for publication at <b>IEEE NOMS 2025</b> in Honolulu, USA.
+      </p><p>
+      <i>Abstract — The Internet of Things (IoT) aims to gather valuable data
+      from our surroundings through resource-constrained networks and devices.
+      For this reason, efficient and lightweight communication protocols are
+      required to be developed and adopted. CORECONF, a network management
+      protocol designed for constrained environments, provides a promising
+      solution for IoT device configuration. This work introduces pycoreconf, an
+      open-source implementation of CORECONF, with the goal of testing the
+      protocol and making it more accessible to researchers and developers by
+      enabling its use in real-world scenarios and experimental setups. In this
+      paper, we evaluate its performance and applicability as a southbound
+      interface in an SDN-based architecture, demonstrating its potential for
+      configuring security contexts between IoT devices. Potential for other use
+      cases remains to be explored in future work. Our results suggest that
+      pycoreconf is a viable tool for those interested in exploring and adopting
+      CORECONF in IoT scenarios.</i>
+      </p><p>
+      <i>Index Terms — CORECONF, IoT, SDN, CoAP, YANG, CBOR, OSCORE, EDHOC,
+      constrained, devices, networks.</i> 
+
   oee:
     title: "OEE Metrics solution for Industry 4.0"
-    desc: This is the project description.
+    desc:
+      In collaboration with my team, we developed a complete metrics solution
+      using <code>Ignition 8</code> to measure Overall Equipment Effectiveness
+      (OEE) in a manufacturing environment, boosting digital transformation
+      efforts. Our project involved close cooperation with various departments,
+      including the client's IT, planning, ERP/SAP, operators, and management,
+      to design a custom solution that met their specific needs.
+      </p><p>
+      By gathering data directly from the machines' PLCs through <code>OPC
+      UA</code> and <code>Modbus</code> protocols, we ensured accurate and
+      real-time monitoring of production data. An intuitive tablet interface
+      allowed factory workers to provide details on downtime and other events
+      directly at the machines. This user-centered approach engaged operators
+      and eased data acquisiton on the plant's floor. Separate desktop apps and
+      per-area dashboards allowed other departments to set production targets
+      and follow the plant's live performance.
+      </p><p>
+      I eventually took over the lead and development of the project,
+      communicating directly with the client and addressing improvement
+      opportunities and implementation issues. Interface redesigns allowed for
+      faster workflows and clearer visuals, while backend processes and
+      <code>SQL</code> queries optimizations boosted the solution's performance
+      by roughly 80%. I also provided training for operators and managers,
+      ensuring they understood how to use and leverage the new system. The final
+      solution included features such as real-time machine status and production
+      monitoring, work order scheduling, automated alarms, notifications, and
+      PDF reports, providing valuable insights at all levels.
 
 contact:
   title: Contact me

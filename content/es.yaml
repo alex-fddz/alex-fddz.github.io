@@ -81,15 +81,93 @@ projects:
   uwb:
     title: "Monitoreo de desempeño en comunicaciones UWB y BLE"
     desc:
-      This is the project description.
+      Durante mis prácticas de maestría en <b>STMicroelectronics</b>,
+      propuse, desarrollé e integré un sistema de métricas que permitió a los
+      desarrolladores del equipo monitorear el desempeño de su solución, que
+      involucraba el procesamiento, transmisión y recepción de mensajes de
+      Ultra-Wide Band (UWB) y Bluetooth Low-Energy (BLE).
       </p><p>
-      This is <b>another paragraph</b>.
+      El desarrollo del proyecto implicó estudiar y entender toda la base de
+      código en <code>C</code> para plataformas <code>STM32</code>, para la cual
+      proporcioné un diagrama de flujo (muy valorado por el equipo). Trabajé
+      directamente con la pila de la solución para identificar y guardar
+      Indicadores Clave de Desempeño (KPI) relevantes. Los datos se almacenaban
+      en una base de datos local <code>InfluxDB</code> durante las pruebas de
+      integración automatizadas, usando una librería separada escrita en
+      <code>Python</code>.
+      </p><p>
+      Finalmente, diseñé e integré un panel completo usando <code>Grafana</code>,
+      y configuré alertas automáticas por correo electrónico para notificar a los
+      miembros del equipo sobre degradaciones en el rendimiento que excedieran un
+      umbral definido. Como resultado, la solución proporcionó información valiosa
+      para mejorar la lógica, y dio confianza al equipo para seguir desarrollando
+      sabiendo que los problemas de desempeño serían detectados automáticamente.
+
   pycoreconf:
     title: "Implementación de CORECONF: un caso de uso con OSCORE/EDHOC"
-    desc: This is the project description.
+    desc: 
+      Como parte de mis estudios de maestría en IoT en <b>IMT Atlantique</b>,
+      colaboré en un proyecto de investigación con un equipo de la
+      <b>Universidad de Murcia</b>, explorando la aplicación de paradigmas de
+      Software Defined Networking (SDN) en entornos con recursos computacionales
+      restringidos. El equipo identificó a CORECONF (CoAP Management Interface)
+      como una solución potencial para establecer contextos de seguridad entre
+      dispositivos de red, pero carecía de herramientas y experiencia para probarlo.
+      </p><p>
+      El proyecto involucró investigar el protocolo, comprender las tecnologías
+      relacionadas, prototipar soluciones e integrar el resultado final,
+      que publicamos como <a href="https://github.com/alex-fddz/pycoreconf">
+      pycoreconf</a>, en un entorno contenedorizado como prueba de concepto.
+      El proyecto exigió buenas habilidades de comunicación multicultural y
+      concluyó con la publicación de un artículo aceptado en la conferencia
+      <b>IEEE NOMS 2025</b> en Honolulu, EE. UU.
+      </p><p>
+      <i>Resumen — El Internet de las Cosas (IoT) busca recopilar datos valiosos
+      de nuestro entorno usando redes y dispositivos de recursos limitados.
+      Esto exige el desarrollo y adopción de protocolos de comunicación
+      eficientes y ligeros. CORECONF, un protocolo de gestión de red para
+      entornos restringidos, ofrece una solución prometedora para la
+      configuración de dispositivos IoT. Este trabajo presenta pycoreconf,
+      una implementación open-source de CORECONF, diseñada para probar el
+      protocolo y hacerlo accesible a investigadores y desarrolladores. En
+      este artículo, evaluamos su desempeño y aplicabilidad como interfaz
+      sur en una arquitectura basada en SDN, demostrando su potencial para
+      establecer contextos de seguridad entre dispositivos IoT.</i>
+      </p><p>
+      <i>Palabras clave — CORECONF, IoT, SDN, CoAP, YANG, CBOR, OSCORE, EDHOC,
+      dispositivos, redes, entornos restringidos.</i>
+
   oee:
     title: "Solución de métricas OEE para Industria 4.0"
-    desc: This is the project description.
+    desc: 
+      En colaboración con mi equipo, desarrollamos una solución completa de
+      métricas utilizando <code>Ignition 8</code> para medir la Eficiencia
+      Global de los Equipos (OEE) en un entorno de manufactura, impulsando los
+      esfuerzos de transformación digital.
+      </p><p>
+      El proyecto implicó trabajar en estrecha colaboración con distintos
+      departamentos, incluyendo TI, planificación, ERP/SAP, operadores y
+      gerencia del cliente, para diseñar una solución personalizada.
+      </p><p>
+      Recopilando datos directamente desde los PLCs de las máquinas usando
+      protocolos <code>OPC UA</code> y <code>Modbus</code>, aseguramos un
+      monitoreo preciso y en tiempo real de la producción. Una interfaz de
+      tablet intuitiva permitió a los operarios registrar tiempos de paro y
+      otros eventos directamente en las máquinas. Este enfoque centrado en el
+      usuario facilitó la adquisición de datos en planta. Aplicaciones de
+      escritorio y paneles de control por área permitieron a otros departamentos
+      fijar metas de producción y seguir el desempeño en tiempo real.
+      </p><p>
+      Eventualmente tomé el liderazgo del proyecto, comunicándome directamente
+      con el cliente y atendiendo oportunidades de mejora y problemas de
+      implementación. Los rediseños de la interfaz permitieron flujos de trabajo
+      más rápidos y visuales más claros, mientras que optimizaciones en procesos
+      backend y consultas <code>SQL</code> mejoraron el rendimiento en
+      aproximadamente un 80%. También capacite a operadores y gerentes para
+      asegurar el uso adecuado del sistema. La solución final incluyó funciones
+      como monitoreo en tiempo real de producción y estado de las máquinas,
+      programación de órdenes de trabajo, alarmas automáticas, notificaciones y
+      generación de reportes PDF.
 
 contact:
   title: Contacto

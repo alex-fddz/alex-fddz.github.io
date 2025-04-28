@@ -78,18 +78,100 @@ projects:
   read_more: En savoir plus
   close: Fermer
   see_all: Découvrir tous mes projets
+
   uwb:
     title: "Suivi des performances des communications UWB et BLE"
-    desc:
-      This is the project description.
+    desc: 
+      Lors de mon stage de master chez <b>STMicroelectronics</b>, j'ai proposé,
+      développé et intégré un système de métriques permettant aux développeurs de
+      l'équipe de surveiller les performances de leur solution, impliquant le
+      traitement, la transmission et la réception de messages Ultra-Wide Band
+      (UWB) et Bluetooth Low-Energy (BLE).
       </p><p>
-      This is <b>another paragraph</b>.
+      Le développement du projet a nécessité l'étude et la compréhension de
+      l'ensemble de la base de code en <code>C</code> pour les plateformes
+      <code>STM32</code>, pour laquelle j'ai fourni une visualisation sous forme
+      de diagramme de flux (grandement appréciée par l'équipe). J'ai travaillé
+      directement avec la pile de solution pour identifier et sauvegarder les
+      Indicateurs Clés de Performance (KPI) pertinents. Les données étaient
+      enregistrées dans une base de données locale <code>InfluxDB</code> lors des
+      tests d'intégration automatisés en utilisant une bibliothèque distincte
+      écrite en <code>Python</code>.
+      </p><p>
+      Enfin, j'ai conçu et intégré un tableau de bord complet avec
+      <code>Grafana</code>, et mis en place des alertes par email automatiques pour
+      notifier les membres de l'équipe en cas de dégradation des performances au-delà
+      d'un certain seuil. Cette solution a offert des perspectives précieuses
+      pour améliorer la logique et a renforcé la confiance de l'équipe en leur
+      développement, sachant que les problèmes de performance seraient détectés
+      automatiquement.
+
   pycoreconf:
     title: "Implémentation de CORECONF : un cas d’usage OSCORE/EDHOC"
-    desc: This is the project description.
+    desc: 
+      Dans le cadre de mes études de master en IoT à <b>IMT Atlantique</b>,
+      j'ai collaboré à un projet de recherche avec une équipe de
+      <b>l'Universidad de Murcia</b>, explorant l'application des paradigmes de
+      Software Defined Networking (SDN) dans des environnements contraints. L'équipe
+      avait identifié CORECONF (CoAP Management Interface) comme une solution
+      potentielle pour établir un contexte de sécurité entre appareils réseau,
+      mais manquait d'outils et d'expertise pour le tester.
+      </p><p>
+      Le projet a impliqué la recherche sur le protocole, la compréhension des
+      technologies concernées, le prototypage de solutions et l'intégration de la
+      solution finale, publiée sous forme de projet open-source nommé <a
+      href="https://github.com/alex-fddz/pycoreconf">pycoreconf</a>, dans un
+      environnement conteneurisé comme preuve de concept. Le projet a nécessité de
+      bonnes compétences en communication multiculturelle et a abouti à la
+      publication d'un article accepté à la conférence <b>IEEE NOMS 2025</b> à
+      Honolulu, USA.
+      </p><p>
+      <i>Résumé — L'Internet des Objets (IoT) vise à collecter des données
+      précieuses de notre environnement via des réseaux et appareils contraints.
+      Cela nécessite le développement et l'adoption de protocoles de
+      communication efficaces et légers. CORECONF, un protocole de gestion
+      de réseau conçu pour ces environnements, offre une solution prometteuse
+      pour la configuration des appareils IoT. Ce travail présente pycoreconf,
+      une implémentation open-source de CORECONF, visant à tester le protocole
+      et à le rendre plus accessible aux chercheurs et développeurs. Nous
+      évaluons ses performances et son applicabilité en tant qu'interface
+      sud dans une architecture SDN, démontrant son potentiel pour configurer
+      des contextes de sécurité entre dispositifs IoT.</i>
+      </p><p>
+      <i>Mots-clés — CORECONF, IoT, SDN, CoAP, YANG, CBOR, OSCORE, EDHOC,
+      environnements contraints, appareils, réseaux.</i>
+
   oee:
     title: "Solution de mesures OEE pour l’Industrie 4.0"
-    desc: This is the project description.
+    desc:
+      En collaboration avec mon équipe, nous avons développé une solution
+      complète de métriques utilisant <code>Ignition 8</code> pour mesurer
+      l'Effectivité Globale des Équipements (OEE) dans un environnement de
+      fabrication, soutenant les efforts de transformation numérique.
+      Le projet a impliqué une coopération étroite avec différents départements
+      du client, y compris l'IT, la planification, ERP/SAP, les opérateurs et la
+      direction, afin de concevoir une solution sur mesure.
+      </p><p>
+      En recueillant directement les données des automates industriels (PLCs)
+      via les protocoles <code>OPC UA</code> et <code>Modbus</code>, nous avons
+      assuré un suivi précis et en temps réel des données de production. Une
+      interface intuitive sur tablette permettait aux opérateurs d'usine de
+      renseigner les temps d'arrêt et d'autres événements directement sur
+      machine. Cette approche centrée utilisateur a facilité l'acquisition de
+      données au sol. Des applications de bureau distinctes et des tableaux
+      de bord par zone permettaient aux autres départements de fixer des objectifs
+      de production et de suivre la performance en direct.
+      </p><p>
+      J'ai ensuite repris la direction du projet, communiquant directement
+      avec le client, et gérant les améliorations et les problèmes d'implémentation.
+      Les redesigns d'interface ont permis d'accélérer les flux de travail et
+      d'améliorer la lisibilité, tandis que les optimisations des processus
+      backend et des requêtes <code>SQL</code> ont amélioré les performances
+      d'environ 80%. J'ai aussi formé les opérateurs et les managers pour qu'ils
+      maîtrisent le nouveau système. La solution finale comprenait des
+      fonctionnalités comme le suivi en temps réel de l'état des machines,
+      la planification des ordres de travail, les alarmes et notifications
+      automatiques, ainsi que des rapports PDF.
 
 contact:
   title: Me contacter
