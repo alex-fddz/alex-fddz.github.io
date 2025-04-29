@@ -7,9 +7,7 @@ navbar:
 
 welcome:
   greeting: "Hola, me llamo"
-  name: "Javier Alejandro Fernandez"
-  sub_greeting: "pero puedes llamarme"
-  short_name: "Alex"
+  short_name: "pero puedes llamarme Alex"
   title: "Soy Ingeniero en Mecatrónica e IoT|"
   contact_btn: "Di hola"
   download_cv_btn: "Toma mi CV"
@@ -147,12 +145,13 @@ projects:
       dispositivos de red, pero carecía de herramientas y experiencia para probarlo.
       </p><p>
       El proyecto involucró investigar el protocolo, comprender las tecnologías
-      relacionadas, prototipar soluciones e integrar el resultado final,
-      que publicamos como <a href="https://github.com/alex-fddz/pycoreconf">
-      pycoreconf</a>, en un entorno contenedorizado como prueba de concepto.
-      El proyecto exigió buenas habilidades de comunicación multicultural y
-      concluyó con la publicación de un artículo aceptado en la conferencia
-      <b>IEEE NOMS 2025</b> en Honolulu, EE. UU.
+      relacionadas, prototipar soluciones e integrar el resultado final, que
+      publicamos como <a class="font-mono"
+      href="https://github.com/alex-fddz/pycoreconf">pycoreconf</a>, en un
+      entorno contenedorizado como prueba de concepto. El proyecto exigió buenas
+      habilidades de comunicación multicultural y concluyó con la publicación de
+      un artículo aceptado en la conferencia <b>IEEE NOMS 2025</b> en Honolulu,
+      EE. UU.
       </p><p>
       <i>Resumen — El Internet de las Cosas (IoT) busca recopilar datos valiosos
       de nuestro entorno usando redes y dispositivos de recursos limitados.

@@ -7,9 +7,7 @@ navbar:
 
 welcome:
   greeting: "Bonjour, je m'appelle"
-  name: "Javier Alejandro Fernandez"
-  sub_greeting: "mais vous pouvez m'appeller"
-  short_name: "Alex"
+  short_name: "mais vous pouvez m'appeller Alex"
   title: "Je suis Ingénieur en Mécatronique & IoT|"
   contact_btn: "Écris moi"
   download_cv_btn: "Tiens mon CV"
@@ -151,11 +149,12 @@ projects:
       mais manquait d'outils et d'expertise pour le tester.
       </p><p>
       Le projet a impliqué la recherche sur le protocole, la compréhension des
-      technologies concernées, le prototypage de solutions et l'intégration de la
-      solution finale, publiée sous forme de projet open-source nommé <a
+      technologies concernées, le prototypage de solutions et l'intégration de
+      la solution finale, publiée sous forme de projet open-source nommé <a
+      class="font-mono"
       href="https://github.com/alex-fddz/pycoreconf">pycoreconf</a>, dans un
-      environnement conteneurisé comme preuve de concept. Le projet a nécessité de
-      bonnes compétences en communication multiculturelle et a abouti à la
+      environnement conteneurisé comme preuve de concept. Le projet a nécessité
+      de bonnes compétences en communication multiculturelle et a abouti à la
       publication d'un article accepté à la conférence <b>IEEE NOMS 2025</b> à
       Honolulu, USA.
       </p><p>

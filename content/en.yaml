@@ -7,9 +7,7 @@ navbar:
 
 welcome:
   greeting: "Hello, my name is"
-  name: "Javier Alejandro Fernandez"
-  sub_greeting: "but you can call me"
-  short_name: "Alex"
+  short_name: "but you can call me Alex"
   title: "I'm a Mechatronics & IoT Engineer|"
   contact_btn: "Say hi"
   download_cv_btn: "Get my CV"
@@ -147,7 +145,7 @@ projects:
       </p><p>
       The project involved researching the protocol and understanding all
       relevant technologies, prototyping solutions, and integrating the final
-      solution, which we published as <a
+      solution, which we published as <a class="font-mono" 
       href="https://github.com/alex-fddz/pycoreconf">pycoreconf</a>, into a
       containerized environment as a Proof of Concept. The project demanded good
       multicultural communication skills and culminated in a conference paper
