@@ -53,7 +53,19 @@
           <h1 data-i18n="welcome.greeting"></h1>
           <h1 class="display-5 my-name">Javier Alejandro <span class="display-4 fw-bold">Fernandez</span></h1>
           <h2 class="text-secondary fs-2" data-i18n="welcome.short_name"></h2>
-          <h2 class="my-3 font-mono fs-3" data-i18n="welcome.title"></h2>
+          <div class="typed-wrapper my-3">
+            <h2 class="font-mono fs-3">
+              <span data-i18n="welcome.iam"></span> 
+              <div id="typed-strings">
+                <p data-i18n="welcome.typed_strings.0"></p>
+                <p data-i18n="welcome.typed_strings.1"></p>
+                <p data-i18n="welcome.typed_strings.2"></p>
+                <p data-i18n="welcome.typed_strings.3"></p>
+                <p data-i18n="welcome.typed_strings.4"></p>
+              </div>
+              <span id="typed"></span>
+            </h2>
+          </div>
           <div class="pt-3 d-grid gap-2 d-sm-flex justify-content-sm-left">
             <a id="contactBtn" href="#contact" class="btn btn-dark fs-5 lh-base py-2 px-4" data-i18n="welcome.contact_btn"></a>
             <div class="btn-group"> <!-- Split dropdown button -->
@@ -418,6 +430,7 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-yaml/dist/js-yaml.min.js"></script> <!-- Translations -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> <!-- Typed.js -->
     <script src="assets/js/main.js"></script>
 
     <!-- The end. -->

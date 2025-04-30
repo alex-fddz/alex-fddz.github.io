@@ -8,7 +8,13 @@ navbar:
 welcome:
   greeting: "Hello, my name is"
   short_name: "but you can call me Alex"
-  title: "I'm a Mechatronics & IoT Engineer|"
+  iam: I'm
+  typed_strings: 
+    0: a Mechatronics & IoT Engineer
+    1: an Embedded Systems Developer
+    2: an Industrial Automation Specialist
+    3: a Maker & DIY Enthusiast
+    4: a Linux Tinkerer
   contact_btn: "Say hi"
   download_cv_btn: "Get my CV"
 

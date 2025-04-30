@@ -1,3 +1,19 @@
+typedObj = null;
+
+function makeTyped() {
+  if (typedObj) {
+    console.log(typedObj);
+    typedObj.destroy(); // Clean up previous instance
+  }
+  typedObj = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 50,
+    backDelay: 1250,
+    backSpeed: 25,
+    loop: true
+  });
+}
+
 function getNestedYamlValue(obj, path) {
   return path.split('.').reduce((acc, key) => acc && acc[key], obj);
 }
@@ -16,6 +32,9 @@ async function loadYAML(lang) {
         el.innerText = value;
       }
     });
+
+    makeTyped();
+
   } catch (error) {
     console.error("Error loading YAML:", error);
   }

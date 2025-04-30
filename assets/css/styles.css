@@ -10,6 +10,14 @@
   font-family: 'IBM Plex Mono', monospace;
 }
 
+/* Custom classes: */
+
+.typed-wrapper {
+  display: block;
+  overflow: hidden;
+  height: 5.5rem; /* 3 lines of fs-3 */
+}
+
 /* Custom styling overrides: */
 
 code {
@@ -124,6 +132,17 @@ code {
   .timeline-left {
     display: none;
   }
+
+  .typed-wrapper {
+    height: 4rem; /* 2 lines of fs-3 */
+  }
 }
 /* End of CSS Timeline */
+
+@media screen and (min-width: 992px) {
+  /* styles for lg, xl, xxl */
+  .typed-wrapper {
+    height: 2.5rem; /* 1 line of fs-3 */
+  }
+}
 

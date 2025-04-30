@@ -8,7 +8,13 @@ navbar:
 welcome:
   greeting: "Bonjour, je m'appelle"
   short_name: "mais vous pouvez m'appeller Alex"
-  title: "Je suis Ingénieur en Mécatronique & IoT|"
+  iam: Je suis
+  typed_strings:
+    0: Ingénieur en mécatronique et IoT
+    1: Développeur de systèmes embarqués
+    2: Spécialiste en automatisation industrielle
+    3: Passionné de bricolage et de fabrication
+    4: Bidouilleur Linux
   contact_btn: "Écris moi"
   download_cv_btn: "Tiens mon CV"
 
