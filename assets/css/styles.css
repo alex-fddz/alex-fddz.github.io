@@ -12,6 +12,10 @@
 
 /* Custom classes: */
 
+.social-link {
+  color: black;
+}
+
 .typed-wrapper {
   display: block;
   overflow: hidden;
@@ -52,6 +56,112 @@ code {
 
 .nav-pills .nav-link {
   color: var(--bs-dark);
+}
+
+:root[data-bs-theme="light"] {
+  .btn-primary {
+    --bs-btn-bg: #212529;
+    --bs-btn-color: #fff;
+    --bs-btn-border-color: #212529;
+    --bs-btn-hover-bg: #424649;
+    --bs-btn-hover-border-color: #373b3e;
+    --bs-btn-focus-shadow-rgb: 66, 70, 73;
+    --bs-btn-active-bg: #4d5154;
+    --bs-btn-active-border-color: #373b3e;
+  }
+}
+
+:root[data-bs-theme="dark"] {
+  .btn-primary {
+    --bs-btn-color: #000;
+    --bs-btn-bg: #f8f9fa;
+    --bs-btn-border-color: #f8f9fa;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #e2e6ea;
+    --bs-btn-hover-border-color: #dae0e5;
+    --bs-btn-focus-shadow-rgb: 211, 212, 213;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #dae0e5;
+    --bs-btn-active-border-color: #d3d9df;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-bg: #f8f9fa;
+    --bs-btn-disabled-border-color: #f8f9fa;
+  }
+
+  .btn-outline-secondary {
+    color: #ccc; /* lighter gray for text */
+    border-color: #ccc; /* lighter gray border */
+  }
+  .btn-outline-secondary:hover,
+  .btn-outline-secondary:focus {
+    color: #000; /* optional: white on hover/focus */
+    border-color: #ccc; /* keep border consistent */
+    background-color: #bdbdbd; /* subtle dark bg on hover */
+  }
+
+  .text-secondary {
+    color: #ccc !important;
+  }
+
+  /* Language switcher */
+  .dropdown-menu .dropdown-item.active,
+  .dropdown-menu .dropdown-item:active {
+    background-color: var(--bs-light);
+    color: black;
+  }
+
+  /* About section */
+  .social-link {
+    color: white;
+  }
+
+  /* Skills section */
+  .accordion-button:not(.collapsed),
+  .accordion-button:not(.collapsed):focus {
+    background-color: var(--bs-light);
+    border-color: var(--bs-light);
+    color: black;
+    box-shadow: none;
+  }
+  .accordion-button:not(.collapsed)::after {
+    filter: brightness(0) invert(0);
+  }
+  .accordion-button::after {
+    filter: brightness(0) invert(1);
+  }
+
+  /* Resume section */
+  .nav-pills .nav-link.active {
+    background-color: var(--bs-light);
+    color: black;
+  }
+  .nav-pills .nav-link {
+    color: var(--bs-light);
+  }
+
+  .timeline-circle {
+    background-color: #dee2e6;
+  }
+  .timeline-middle {
+    background-color: #35393d;
+  }
+  .timeline-left {
+    background-color: #35393d;
+  }
+  .timeline-content-secondary {
+    color: #ccc;
+  }
+
+  /* Projects section */
+  .badge.text-bg-light {
+    color: #fff !important; /* like .text-bg-dark */
+    /* background-color: rgba(var(--bs-dark-rgb), 1) !important; */
+    background-color: #1b1e22 !important;
+  }
+  code {
+    color: #ff4c4c;
+  }
 }
 
 /* Timeline component styling -- inspired from Divyesh Kamalanaban's

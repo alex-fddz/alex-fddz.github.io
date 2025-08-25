@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,7 +34,7 @@
 
           <!-- Language switcher -->
           <div class="dropdown font-mono">
-            <button id="lang-switcher" class="btn dropdown-toggle text-black" type="button" data-bs-toggle="dropdown" aria-expanded="false">[ ]</button>
+            <button id="lang-switcher" class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">[ ]</button>
             <ul class="dropdown-menu" style="min-width: 10px">
               <li><a class="dropdown-item dropdown-lang" data-lang="en">en</a></li>
               <li><a class="dropdown-item dropdown-lang" data-lang="fr">fr</a></li>
@@ -67,7 +67,7 @@
             </h2>
           </div>
           <div class="pt-3 d-grid gap-2 d-sm-flex justify-content-sm-left">
-            <a id="contactBtn" href="#contact" class="btn btn-dark fs-5 lh-base py-2 px-4" data-i18n="welcome.contact_btn"></a>
+            <a id="contactBtn" href="#contact" class="btn btn-primary fs-5 lh-base py-2 px-4" data-i18n="welcome.contact_btn"></a>
             <div class="btn-group"> <!-- Split dropdown button -->
               <a id="getCVBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary fs-5 lh-base py-2 px-4" data-i18n="welcome.download_cv_btn"></a>
               <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split flex-grow-0" data-bs-toggle="dropdown" aria-expanded="false">
@@ -94,8 +94,9 @@
           <h1 class="display-6 lh-1 mb-3 mt-5 font-mono">$ whoami</h1>
           <p class="lead" data-i18n="about.bio"></p>
           <div class="fw-bold text-end"> <!-- Links -->
-            <a href="https://github.com/alex-fddz/" target="_blank" class="social-link text-black font-mono">[github]</a>
-            <a href="https://gitlab.com/alex_fddz/" target="_blank" class="social-link text-black font-mono">[gitlab]</a></div>
+            <a href="https://github.com/alex-fddz/" target="_blank" class="social-link font-mono">[github]</a>
+            <a href="https://gitlab.com/alex_fddz/" target="_blank" class="social-link font-mono">[gitlab]</a>
+          </div>
         </div>
       </div>
     </section>
@@ -330,7 +331,7 @@
                   <span class="badge text-bg-light">C</span>
                 </h6>
               </div>
-              <div><button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="uwb" data-i18n="projects.read_more"></button></div>
+              <div><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="uwb" data-i18n="projects.read_more"></button></div>
             </div>
           </div>
         </div>
@@ -347,7 +348,7 @@
                   <span class="badge text-bg-light">Publication</span>
                 </h6>
               </div>
-              <div><button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="pycoreconf" data-i18n="projects.read_more"></button></div>
+              <div><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="pycoreconf" data-i18n="projects.read_more"></button></div>
             </div>
           </div>
         </div>
@@ -363,13 +364,13 @@
                   <span class="badge text-bg-light">Python</span>
                 </h6>
               </div>
-              <div><button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="oee" data-i18n="projects.read_more"></button></div>
+              <div><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="oee" data-i18n="projects.read_more"></button></div>
             </div>
           </div>
         </div>
       </div>
       <div class="d-flex justify-content-center mt-3 d-none">
-        <a href="#" class="btn btn-lg btn-dark" data-i18n="projects.see_all"><span class="fw-bold ms-3">[→]</span></a>
+        <a href="#" class="btn btn-lg btn-primary" data-i18n="projects.see_all"><span class="fw-bold ms-3">[→]</span></a>
       </div>
 
       <!-- Project details modal -->
@@ -378,14 +379,14 @@
           <div class="modal-content">
             <div class="modal-header">
               <h1 id="projectModalLabel" class="modal-title fs-5">Project title</h1>
-              <button class="btn ms-auto px-0 text-black font-mono fw-bold fs-5" data-bs-dismiss="modal" aria-label="Close">[X]</button>
+              <button class="btn ms-auto px-0 font-mono fw-bold fs-5" data-bs-dismiss="modal" aria-label="Close">[X]</button>
             </div>
             <div class="modal-body fs-6">
               <img id="projectModalImage" class="mb-3" src="assets/images/uwb.jpg" alt="project.jpg" width="100%">
               <p id="projectModalDescription">Lorem ipsum dolor sit amet.</p>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-dark" data-bs-dismiss="modal" data-i18n="projects.close"></button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal" data-i18n="projects.close"></button>
             </div>
           </div>
         </div>
@@ -409,7 +410,7 @@
             </li>
             <li class="list-group-item text-center">
               <div class="fw-bold my-2 font-mono">[in]</div>
-              <a class="text-secondary" href="https://linkedin.com/in/javier-fddz" target="_blank" class="social-link">/in/javier-fddz</a>
+              <a class="text-secondary" href="https://linkedin.com/in/javier-fddz" target="_blank">/in/javier-fddz</a>
             </li>
           </ul>
         </div>
