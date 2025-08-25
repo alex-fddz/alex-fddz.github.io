@@ -94,5 +94,26 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('projectModalImage').src = 'assets/images/' + projectId + '.jpg';
     document.getElementById('projectModalDescription').innerHTML = project['desc'];
   });
+
+  // Theme functionality
+  const root = document.documentElement; // <html> element
+  const toggleBtn = document.getElementById("themeToggle");
+  function setTheme(theme, save=0) {
+    root.setAttribute("data-bs-theme", theme);
+    toggleBtn.textContent = theme === "dark" ? "[*]" : "[(]";
+    if (save) localStorage.setItem("savedTheme", theme); // Save preference
+  }
+
+  // Load preferred theme
+  setTheme(localStorage.getItem("savedTheme") ||
+    (window.matchMedia("(prefers-color-scheme: dark)").matches ?
+      "dark" : "light")
+  );
+
+  // Add event listener for theme toggle
+  toggleBtn.addEventListener("click", function () {
+    const current = root.getAttribute("data-bs-theme");
+    setTheme(current === "dark" ? "light" : "dark", save=1);
+  });
 });
 
