@@ -20,7 +20,7 @@ function getNestedYamlValue(obj, path) {
 
 async function loadYAML(lang) {
   try {
-    const response = await fetch(`content/${lang}.yaml`);
+    const response = await fetch(`/content/${lang}.yaml`);
     const yamlText = await response.text();
     // const content = jsyaml.load(yamlText);
     window.content = jsyaml.load(yamlText); // Expose content obj so it's accessible later (projects).
@@ -33,7 +33,9 @@ async function loadYAML(lang) {
       }
     });
 
-    makeTyped();
+    if (document.querySelector('#typed')) {
+      makeTyped();
+    }
 
   } catch (error) {
     console.error("Error loading YAML:", error);
@@ -42,8 +44,6 @@ async function loadYAML(lang) {
 
 function setContentLang(lang) {
   loadYAML(lang);
-  // Update "Get my CV" button so default is in selected language
-  document.getElementById("getCVBtn").href = "downloads/FERNANDEZ_Javier_CV_" + lang.toUpperCase() + ".pdf";
   localStorage.setItem("selectedLang", lang); // Save preference
   document.getElementById("lang-switcher").innerText = `[${lang}]`; // Set lang text
   // Update active class on dropdown items
@@ -53,6 +53,11 @@ function setContentLang(lang) {
       item.classList.add("active"); // Add "active" to the selected item
     }
   });
+  // Update "Get my CV" button so default is in selected language
+  const getCVBtn = document.getElementById('theme-toggle');
+  if (getCVBtn) {
+    getCVBtn.href = "/downloads/FERNANDEZ_Javier_CV_" + lang.toUpperCase() + ".pdf";
+  }
 }
 
 // main:
@@ -91,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const projectId = button.getAttribute('data-project-id');
     const project = window.content['projects'][projectId];
     document.getElementById('projectModalLabel').textContent = project['title'];
-    document.getElementById('projectModalImage').src = 'assets/images/' + projectId + '.jpg';
+    document.getElementById('projectModalImage').src = '/assets/images/' + projectId + '.jpg';
     document.getElementById('projectModalDescription').innerHTML = project['desc'];
   });
 
