@@ -120,5 +120,26 @@ document.addEventListener("DOMContentLoaded", function () {
     const current = root.getAttribute("data-bs-theme");
     setTheme(current === "dark" ? "light" : "dark", save=1);
   });
+
+  // Add event listener for projects page filters
+  const filterButtons = document.querySelectorAll('#filterButtons .nav-link');
+  const projects = document.querySelectorAll('.project-item');
+  if (filterButtons.length && projects.length) {
+    filterButtons.forEach(tab => {
+      tab.addEventListener('shown.bs.tab', (event) => {
+        const filter = event.target.getAttribute('data-filter');
+
+        projects.forEach(card => {
+          const tags = card.getAttribute('data-tags'); // e.g. "iot,automation,python"
+
+          if (filter === "all" || tags.includes(filter)) {
+            card.classList.remove('d-none');
+          } else {
+            card.classList.add('d-none');
+          }
+        });
+      });
+    });
+  }
 });
 
