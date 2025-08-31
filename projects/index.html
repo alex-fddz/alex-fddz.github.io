@@ -52,8 +52,8 @@
     <div class="" style="height: 75px;"></div> <!-- divider -->
 
     <!-- Gallery -->
-    <section id="gallery" class="container scroll-mt-5 my-5 max-vh-100" style="scroll-margin-top: 100px;">
-      <h1 class="my-5 display-6 text-center font-mono" data-i18n="projects.title"><h1>
+    <section class="container scroll-mt-5 my-5 max-vh-100" style="scroll-margin-top: 100px;">
+      <h1 class="my-5 display-6 text-center font-mono" data-i18n="projects.page_title"><h1>
 
       <!-- Filter buttons -->
       <div class="d-flex justify-content-center my-3 fs-6">
@@ -74,58 +74,8 @@
       </div>
 
       <!-- Grid -->
-      <div class="row py-3">
-        <div class="project-item col-12 col-md-4 mb-3" data-tags="embedded">
-          <div class="card h-100">
-            <img src="/assets/images/uwb.jpg" class="card-img-top" alt="...">
-            <div class="card-body d-flex flex-column">
-              <div class="flex-grow-1">
-                <p class="card-text fs-4" data-i18n="projects.uwb.title"></p>
-                <h6 class="mb-3">
-                  <span class="badge text-bg-light">UI/UX</span>
-                  <span class="badge text-bg-light">STM32</span>
-                  <span class="badge text-bg-light">InfluxDB</span>
-                  <span class="badge text-bg-light">Grafana</span>
-                  <span class="badge text-bg-light">C</span>
-                </h6>
-              </div>
-              <div><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="uwb" data-i18n="projects.read_more"></button></div>
-            </div>
-          </div>
-        </div>
-        <div class="project-item col-12 col-md-4 mb-3" data-tags="iot">
-          <div class="card h-100">
-            <img src="/assets/images/pycoreconf.jpg" class="card-img-top" alt="...">
-            <div class="card-body d-flex flex-column">
-              <div class="flex-grow-1">
-                <p class="card-text fs-4" data-i18n="projects.pycoreconf.title"></p>
-                <h6 class="mb-3">
-                  <span class="badge text-bg-light">IoT</span>
-                  <span class="badge text-bg-light">Docker</span>
-                  <span class="badge text-bg-light">Python</span>
-                  <span class="badge text-bg-light">Publication</span>
-                </h6>
-              </div>
-              <div><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="pycoreconf" data-i18n="projects.read_more"></button></div>
-            </div>
-          </div>
-        </div>
-        <div class="project-item col-12 col-md-4 mb-3" data-tags="automation">
-          <div class="card h-100">
-            <img src="/assets/images/oee.jpg" class="card-img-top" alt="...">
-            <div class="card-body d-flex flex-column">
-              <div class="flex-grow-1">
-                <p id="card2_title" class="card-text fs-4" data-i18n="projects.oee.title"></p>
-                <h6 class="mb-3">
-                  <span class="badge text-bg-light">UI/UX</span>
-                  <span class="badge text-bg-light">Ignition 8</span>
-                  <span class="badge text-bg-light">Python</span>
-                </h6>
-              </div>
-              <div><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="oee" data-i18n="projects.read_more"></button></div>
-            </div>
-          </div>
-        </div>
+      <div id="projects-gallery" class="row py-3">
+        <!-- Auto-generated block -->
       </div>
 
       <!-- Project details modal -->

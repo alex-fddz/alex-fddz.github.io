@@ -18,12 +18,53 @@ function getNestedYamlValue(obj, path) {
   return path.split('.').reduce((acc, key) => acc && acc[key], obj);
 }
 
+function autoGenerateContent() {
+  // Generate projects gallery content
+  const gallery = document.getElementById("projects-gallery");
+  if (gallery) {
+    gallery.innerHTML = ""; // Make sure we start blank
+    const projectsList = window.content['projects']['list'];
+    Object.entries(projectsList).forEach(([id, project]) => {
+      const keywords = project.keywords.split(",");
+      const card = document.createElement("div");
+      card.className = "project-item col-12 col-md-4 mb-3";
+      card.dataset.tags = project.filters;
+      card.innerHTML = `
+        <div class="card h-100">
+          <img src="/assets/images/${id}.jpg" class="card-img-top" alt="${project.title}">
+          <div class="card-body d-flex flex-column">
+            <div class="flex-grow-1">
+              <p class="card-text fs-4" data-i18n="projects.list.${id}.title"></p>
+              <h6 class="mb-3">
+                ${keywords
+                  .map(k => `<span class="badge text-bg-light">${k}</span>`)
+                  .join(" ")}
+              </h6>
+            </div>
+            <div>
+              <button type="button" 
+                class="btn btn-primary" 
+                data-bs-toggle="modal" 
+                data-bs-target="#projectModal" 
+                data-project-id="${id}" 
+                data-i18n="projects.read_more"></button>
+            </div>
+          </div>
+        </div>
+      `;
+      gallery.appendChild(card);
+    });
+  }
+}
+
 async function loadYAML(lang) {
   try {
     const response = await fetch(`/content/${lang}.yaml`);
     const yamlText = await response.text();
     // const content = jsyaml.load(yamlText);
     window.content = jsyaml.load(yamlText); // Expose content obj so it's accessible later (projects).
+
+    autoGenerateContent(); // If any.
 
     document.querySelectorAll("[data-i18n]").forEach(el => {
       const key = el.getAttribute("data-i18n");
@@ -94,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
   projectModal.addEventListener('show.bs.modal', function (event) {
     const button = event.relatedTarget;
     const projectId = button.getAttribute('data-project-id');
-    const project = window.content['projects'][projectId];
+    const project = window.content['projects']['list'][projectId];
     document.getElementById('projectModalLabel').textContent = project['title'];
     document.getElementById('projectModalImage').src = '/assets/images/' + projectId + '.jpg';
     document.getElementById('projectModalDescription').innerHTML = project['desc'];
@@ -123,15 +164,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Add event listener for projects page filters
   const filterButtons = document.querySelectorAll('#filterButtons .nav-link');
-  const projects = document.querySelectorAll('.project-item');
-  if (filterButtons.length && projects.length) {
+  if (filterButtons) {
     filterButtons.forEach(tab => {
       tab.addEventListener('shown.bs.tab', (event) => {
         const filter = event.target.getAttribute('data-filter');
-
+        const projects = document.querySelectorAll('.project-item'); // projects load later
         projects.forEach(card => {
           const tags = card.getAttribute('data-tags'); // e.g. "iot,automation,python"
-
           if (filter === "all" || tags.includes(filter)) {
             card.classList.remove('d-none');
           } else {
