@@ -50,6 +50,18 @@ function genProjectCard(id, project) {
 }
 
 function autoGenerateContent() {
+  // Generate project highlights
+  const highlights = document.getElementById("highlights");
+  if (highlights) {
+    const projectsToAdd = window.content['projects']['highlights'].split(",");
+    highlights.innerHTML = ""; // Make sure we start blank
+    const projectsList = window.content['projects']['list'];
+    Object.entries(projectsToAdd).forEach(([idx, id]) => {
+      const card = genProjectCard(id, projectsList[id]);
+      highlights.appendChild(card);
+    });
+  }
+
   // Generate projects gallery content
   const gallery = document.getElementById("projects-gallery");
   if (gallery) {

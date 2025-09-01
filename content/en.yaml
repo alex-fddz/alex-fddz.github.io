@@ -115,6 +115,7 @@ projects:
   see_all: See all my projects
   page_title: All my projects
 
+  highlights: pycoreconf,uwb,oee
   list:
     uwb:
       title: "UWB and BLE communications performance monitoring"
