@@ -217,6 +217,9 @@ projects:
 
 contact:
   title: Contact me
+  em:
+    local: javier-alejandro.fernandez
+    domain: imt-atlantique.fr
 
 footer:
   msg: Let's build something cool together!

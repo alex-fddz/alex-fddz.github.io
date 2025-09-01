@@ -62,6 +62,14 @@ function autoGenerateContent() {
     });
   }
 
+  // Generate contact email
+  const emailField = document.getElementById("email-field");
+  if (emailField) {
+    const addr = window.content['contact']['em'];
+    emailField.href = `mailto:${addr.local}@${addr.domain}`;
+    emailField.innerHTML = `${addr.local}@${addr.domain}`;
+  }
+
   // Generate projects gallery content
   const gallery = document.getElementById("projects-gallery");
   if (gallery) {

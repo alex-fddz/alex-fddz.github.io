@@ -222,6 +222,9 @@ projects:
 
 contact:
   title: Me contacter
+  em:
+    local: javier-alejandro.fernandez
+    domain: imt-atlantique.fr
 
 footer:
   msg: Ensemble, construisons des solutions innovantes.
