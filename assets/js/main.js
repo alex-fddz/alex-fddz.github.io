@@ -18,6 +18,37 @@ function getNestedYamlValue(obj, path) {
   return path.split('.').reduce((acc, key) => acc && acc[key], obj);
 }
 
+function genProjectCard(id, project) {
+  const keywords = project.keywords.split(",");
+  const card = document.createElement("div");
+  card.className = "project-item col-12 col-md-4 mb-3";
+  card.dataset.tags = project.filters;
+  card.innerHTML = `
+    <div class="card h-100">
+      <img src="/assets/images/${id}.jpg" class="card-img-top" alt="${project.title}">
+      <div class="card-body d-flex flex-column">
+        <div class="flex-grow-1">
+          <p class="card-text fs-4" data-i18n="projects.list.${id}.title"></p>
+          <h6 class="mb-3">
+            ${keywords
+              .map(k => `<span class="badge text-bg-light">${k}</span>`)
+              .join(" ")}
+          </h6>
+        </div>
+        <div>
+          <button type="button" 
+            class="btn btn-primary" 
+            data-bs-toggle="modal" 
+            data-bs-target="#projectModal" 
+            data-project-id="${id}" 
+            data-i18n="projects.read_more"></button>
+        </div>
+      </div>
+    </div>
+  `;
+  return card;
+}
+
 function autoGenerateContent() {
   // Generate projects gallery content
   const gallery = document.getElementById("projects-gallery");
@@ -25,33 +56,7 @@ function autoGenerateContent() {
     gallery.innerHTML = ""; // Make sure we start blank
     const projectsList = window.content['projects']['list'];
     Object.entries(projectsList).forEach(([id, project]) => {
-      const keywords = project.keywords.split(",");
-      const card = document.createElement("div");
-      card.className = "project-item col-12 col-md-4 mb-3";
-      card.dataset.tags = project.filters;
-      card.innerHTML = `
-        <div class="card h-100">
-          <img src="/assets/images/${id}.jpg" class="card-img-top" alt="${project.title}">
-          <div class="card-body d-flex flex-column">
-            <div class="flex-grow-1">
-              <p class="card-text fs-4" data-i18n="projects.list.${id}.title"></p>
-              <h6 class="mb-3">
-                ${keywords
-                  .map(k => `<span class="badge text-bg-light">${k}</span>`)
-                  .join(" ")}
-              </h6>
-            </div>
-            <div>
-              <button type="button" 
-                class="btn btn-primary" 
-                data-bs-toggle="modal" 
-                data-bs-target="#projectModal" 
-                data-project-id="${id}" 
-                data-i18n="projects.read_more"></button>
-            </div>
-          </div>
-        </div>
-      `;
+      const card = genProjectCard(id, project);
       gallery.appendChild(card);
     });
   }
