@@ -106,7 +106,7 @@ resume:
       where: INSA Rennes - Échange International
       dates: 2017 - 2018
     2:
-      title: Architecture et Ingénierie pour l’IoT
+      title: Architecture et Ingénierie pour l'IoT
       where: IMT Atlantique - Master
       dates: 2022 - 2023
 
@@ -149,7 +149,7 @@ projects:
         automatiquement.
 
     pycoreconf:
-      title: "Implémentation de CORECONF : un cas d’usage OSCORE/EDHOC"
+      title: "Implémentation de CORECONF : un cas d'usage OSCORE/EDHOC"
       keywords: IoT,Publication,Docker,Python
       filters: iot
       desc: 
@@ -187,7 +187,7 @@ projects:
         environnements contraints, appareils, réseaux.</i>
 
     oee:
-      title: "Solution de mesures OEE pour l’Industrie 4.0"
+      title: "Solution de mesures OEE pour l'Industrie 4.0"
       keywords: UI/UX,Ignition 8,Python
       filters: automation
       desc:
@@ -219,6 +219,62 @@ projects:
         fonctionnalités comme le suivi en temps réel de l'état des machines,
         la planification des ordres de travail, les alarmes et notifications
         automatiques, ainsi que des rapports PDF.
+
+    bang:
+      title: Guidon intelligent pour navigation urbaine
+      keywords: Imp. 3D,Solidworks,BLE,ESP32,nRF,C
+      filters: embedded
+      desc:
+        Faire du vélo en milieu urbain peut être dangereux, surtout lorsque le
+        cycliste ne connaît pas bien la ville, qu'il n'existe pas d'infrastructure
+        dédiée et qu'il a besoin d'indications pour se déplacer d'un point A à un
+        point B. Les solutions de navigation classiques reposent sur la vue ou
+        l'ouïe, ce qui peut distraire le cycliste et réduire sa perception de
+        l'environnement. Le projet <b>"Bike Assistant for Navigation and Guidance (BANG)"</b>
+        vise à résoudre ce problème en utilisant des retours haptiques pour guider
+        les cyclistes.
+        </p><p>
+        J'ai rejoint la startup basée en Roumanie aux premières étapes du programme,
+        en participant à des événements d'incubation et à des présentations. Je me
+        suis ensuite concentré sur le développement matériel de la solution, en
+        travaillant notamment sur le développement embarqué, la conception du
+        produit et les simulations mécaniques avec <code>Solidworks</code>, ainsi
+        que sur le <code>prototypage 3D</code>. Après avoir réalisé une preuve de
+        concept avec un <code>ESP32</code>, nous avons ensuite migré vers un
+        <code>nRF52840 Dongle</code> avec <code>Zephyr RTOS</code> et des circuits
+        imprimés personnalisés, pour aboutir à un produit s'intégrant
+        facilement à n'importe quel guidon de vélo.
+        </p><p>
+        L'application mobile associée transmet les instructions de navigation
+        pas à pas à l'appareil embarqué via un protocole interne efficace,
+        en utilisant Bluetooth Low Energy (<code>BLE</code>). Le prototype
+        fonctionnel final a été prêt pour le lancement de la campagne de financement.
+
+    bread:
+      title: Système de contrôle de qualité du pain
+      keywords: UI/UX,Ignition 8,TIA Portal
+      filters: automation
+      desc:
+        Un client important dans l'industrie agroalimentaire avait besoin d'un
+        système automatisé pour surveiller la taille du pain à la sortie du four,
+        car des variations dans la recette pouvaient entraîner une qualité
+        inconstante.
+        </p><p>
+        La solution que j'ai développée consistait à intégrer des capteurs de
+        distance industriels contrôlés par un <code>PLC Siemens</code> (programmé
+        avec <code>TIA Portal</code>) et une <code>IHM</code> (Interface Homme-Machine)
+        conçue avec <code>Ignition 8</code> pour surveiller, calibrer et contrôler
+        le système. Celui-ci avertissait les opérateurs si les mesures dépassaient
+        les spécifications. J'ai ensuite collaboré avec les techniciens
+        d'automatisation et de maintenance pour déployer la solution sur la ligne de
+        production.
+        </p><p>
+        Le système a permis de surveiller en temps réel les critères de qualité du
+        pain, améliorant considérablement les temps de réaction et assurant une plus
+        grande constance du produit final. Le client a particulièrement apprécié les
+        graphiques de tendance de taille du pain et la possibilité d'exporter les
+        données pour une analyse et des statistiques approfondies.
+
 
 contact:
   title: Me contacter

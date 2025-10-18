@@ -214,6 +214,60 @@ projects:
         como monitoreo en tiempo real de producción y estado de las máquinas,
         programación de órdenes de trabajo, alarmas automáticas, notificaciones y
         generación de reportes PDF.
+      
+    bang:
+      title: Manubrio inteligente para navegación urbana
+      keywords: Imp. 3D, Solidworks, BLE, ESP32, nRF, C
+      filters: embedded
+      desc:
+        Andar en bicicleta en entornos urbanos puede ser peligroso, especialmente
+        si el ciclista no conoce la ciudad, no hay infraestructura dedicada para
+        bicicletas y necesita indicaciones para llegar de un punto A a un punto B.
+        Las soluciones de navegación convencionales utilizan la vista o el oído
+        para ubicarse, lo que puede distraer al ciclista y reducir su atención al
+        entorno. El proyecto <b>"Bike Assistant for Navigation and Guidance (BANG)"</b>
+        busca resolver este problema utilizando retroalimentación háptica para guiar
+        a los ciclistas.
+        </p><p>
+        Me uní a la startup con sede en Rumania en las primeras etapas del programa,
+        participando en eventos de incubación y presentaciones. Luego me enfoqué en
+        el desarrollo del hardware de la solución. Trabajé específicamente en el
+        desarrollo embebido, diseño del producto y simulaciones mecánicas usando
+        <code>Solidworks</code>, además de <code>impresión 3D</code> para el
+        prototipado. Tras realizar la prueba de concepto con un <code>ESP32</code>,
+        posteriormente migramos a un <code>nRF52840 Dongle</code> con
+        <code>Zephyr RTOS</code> y tarjetas de circuito impreso personalizadas, para
+        obtener un producto optimizado que se integrara fácilmente en cualquier
+        manubrio de bicicleta.
+        </p><p>
+        La aplicación móvil envía las instrucciones de navegación
+        paso a paso al dispositivo embebido mediante un protocolo interno eficiente,
+        a través de Bluetooth Low Energy (<code>BLE</code>). El prototipo final
+        funcional estuvo listo para el lanzamiento de la campaña de financiamiento.
+
+    bread:
+      title: Sistema de control de calidad de pan
+      keywords: UI/UX,Ignition 8,TIA Portal
+      filters: automation
+      desc:
+        Un cliente importante en la industria alimentaria requería un sistema
+        automatizado para monitorear el tamaño del pan al salir del horno, ya que
+        variaciones en la receta podían afectar los criterios de calidad.
+        </p><p>
+        La solución que desarrollé integraba sensores de distancia industriales
+        controlados mediante un <code>PLC Siemens</code> (programado con
+        <code>TIA Portal</code>) y una <code>HMI</code> (Interfaz Hombre-Máquina)
+        desarrollada con <code>Ignition 8</code> para monitorear, calibrar y
+        controlar el sistema, notificando a los usuarios en caso de mediciones fuera
+        de especificación. Posteriormente trabajé junto con técnicos de automatización
+        y mantenimiento para implementar la solución en la línea de producción.
+        </p><p>
+        El sistema permitió monitorear en tiempo real los criterios de calidad del
+        pan, mejorando significativamente los tiempos de respuesta ante desviaciones
+        y aumentando la consistencia del producto final. El cliente apreció
+        especialmente características como las gráficas de tendencia del tamaño del
+        pan y la capacidad de exportar los datos para análisis y estadísticas.
+
 
 contact:
   title: Contacto

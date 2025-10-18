@@ -215,6 +215,60 @@ projects:
         monitoring, work order scheduling, automated alarms, notifications, and
         PDF reports, providing valuable insights at all levels.
 
+    bang:
+      title: Smart Bicycle Handlebar for Turn-by-Turn Navigation
+      keywords: 3D Print,Solidworks,BLE,ESP32,nRF,C
+      filters: embedded
+      desc:
+        Cycling in an urban environment may be dangerous, especially if the
+        commuter is unfamiliar with the city, there is no dedicated bicycle
+        infrastructure, and needs directions to get from point A to point B.
+        Mainstream navigation assistance solutions involve the use of hearing or
+        sight to locate oneself, which may distract the cyclists and reduce
+        awareness of their surroundings. The <b>"Bike Assistant for Navigation
+        and Guidance (BANG)"</b> project aims to solve this issue by using
+        haptics to guide cyclists.
+        </p><p>
+        I joined the Romania-based startup in the early stages of the program,
+        participating in incubator events and pitches. I then focused on
+        developing the hardware part of the solution. I specifically worked on
+        the embedded development, product design and mechanical simulations
+        using <code>Solidworks</code>, and <code>3D printing</code> for
+        prototyping. After working on the proof of concept with an
+        <code>ESP32</code>, we later switched to a <code>nRF52840 Dongle</code>
+        with <code>Zephyr RTOS</code> and custom made PCBs for a streamlined
+        product that integrated seamlessly with any bike handlebar.
+        </p><p>
+        The companion app then sent turn-by-turn navigation instructions to the
+        embedded device using an efficient in-house protocol, through Bluetooth
+        Low Energy (<code>BLE</code>). The final working prototype was ready for
+        the fund-raiser campaign launch.
+    
+    bread:
+      title: Bread Quality Control System
+      keywords: UI/UX,Ignition 8,TIA Portal
+      filters: automation
+      desc:
+        An important client in the food industry required an automated system to
+        monitor bread size as it exits the oven, as variations in their recipe
+        could result in sub-optimal quality criteria.
+        </p><p>
+        The solution I developed involved the integration of industrial-grade
+        distance sensors controlled through a <code>Siemens PLC</code>
+        (programmed using <code>TIA Portal</code>), and a <code>HMI</code>
+        (Human Machine Interface) built with <code>Ignition 8</code> to monitor,
+        callibrate and control the system, and which notified the users in case
+        the measurements were ever out of spec. I then worked in tandem with
+        automation and maintenance technicians to deploy the solution in the
+        production chain.
+        </p><p>
+        The solution system was able to monitor the bread quality criteria in
+        real time, which greatly improved response times for addressing the
+        issue, and thus a higher consistency in the quality of the product. Our
+        client greatly appreciated features such as bread sizing trend graphs,
+        and the ability to export the data for further analysis and statistics.
+
+
 contact:
   title: Contact me
   em:
