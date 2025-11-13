@@ -275,6 +275,44 @@ projects:
         graphiques de tendance de taille du pain et la possibilité d'exporter les
         données pour une analyse et des statistiques approfondies.
 
+    4bar:
+      title: Système de contrôle et de mouvement d'un robot
+      keywords: Robotique, MATLAB, Simulink, ControlDesk
+      filters: automation
+      desc:
+        Dans le cadre de mon stage en 2018 pour finaliser mon programme
+        d'échange international à l'INSA Rennes, j'ai développé un système de
+        contrôle pour une plateforme robotique à 2 axes et 4 barres. Le matériel
+        était déjà en place, et ma mission était de le faire fonctionner. J'ai
+        commencé par étudier les composants, les connexions et la structure
+        globale de la plateforme, puis j'ai modélisé sa géométrie afin de
+        dériver la cinématique directe et inverse, calculant la position de
+        l'effecteur final à partir des angles des moteurs et inversement. Grâce
+        à l'analyse trigonométrique et à l'identification des singularités, j'ai
+        défini des modèles géométriques précis du système.
+        <p></p>
+        J'ai implémenté la logique de contrôle dans <code>MATLAB</code> et
+        <code>Simulink</code> et construit l'interface graphique avec
+        <code>dSPACE ControlDesk</code>. Après avoir acquis correctement les
+        données des encodeurs des moteurs, j'ai programmé des courbes de
+        position, vitesse et accélération à l'aide de formules polynomiales de
+        5e degré. Une boucle de contrôle <code>PI</code> assurait que les
+        moteurs suivaient ces trajectoires avec précision. L'interface graphique
+        supportait les modes de contrôle direct et inverse, permettant à
+        l'utilisateur d'entrer soit les angles des moteurs, soit les coordonnées
+        de l'outil. Des fonctionnalités supplémentaires comprenaient des limites
+        ajustables de vitesse et d'accélération, la validation des entrées, une
+        commande "GO" et des graphiques en temps réel comparant les sorties
+        réelles et les cibles.
+        <p></p>
+        Ce projet m'a apporté non seulement une expérience pratique des systèmes
+        de contrôle et de la robotique industrielle, mais également la vision de
+        considérer les systèmes mécatroniques comme des puzzles où les
+        mathématiques, le code et le métal doivent s'accorder avant tout
+        mouvement. Voir le système enfin en mouvement m'a permis de comprendre
+        que la théorie complexe n'est pas seulement un arrière-plan ou une
+        charge pendant le déploiement, mais le plan logique du système et la clé
+        pour comprendre comment et pourquoi il fonctionne.
 
 contact:
   title: Me contacter

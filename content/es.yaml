@@ -268,6 +268,43 @@ projects:
         especialmente características como las gráficas de tendencia del tamaño del
         pan y la capacidad de exportar los datos para análisis y estadísticas.
 
+    4bar:
+      title: Sistema de Control y Movimiento de Robot
+      keywords: Robótica, MATLAB, Simulink, ControlDesk
+      filters: automation
+      desc:
+        Como parte de mi pasantía en 2018 para concluir mi programa de
+        intercambio internacional en INSA Rennes, desarrollé un sistema de
+        control para una robot de 2 ejes y 4 barras. El hardware ya estaba
+        instalado, y mi tarea era hacerlo funcionar. Comencé estudiando los
+        componentes, conexiones y la estructura general de la plataforma, para
+        luego modelar su geometría y derivar tanto la cinemática directa como
+        inversa, calculando la posición del efector final a partir de los
+        ángulos de los motores y viceversa. Mediante análisis trigonométrico e
+        identificación de singularidades, definí los modelos geométricos del
+        sistema.
+        <p></p>
+        Implementé la lógica de control en <code>MATLAB</code> y
+        <code>Simulink</code> y construí la interfaz gráfica usando <code>dSPACE
+        ControlDesk</code>. Tras adquirir correctamente los datos del
+        codificador del motor, programé las curvas de posición, velocidad y
+        aceleración utilizando fórmulas polinómicas de 5º grado. Un bucle de
+        control <code>PI</code> garantizaba que los motores siguieran estas
+        trayectorias con precisión. La interfaz soportaba modos de control
+        directo e inverso, permitiendo al usuario ingresar los ángulos de cada
+        motor o las coordenadas de la herramienta. Características adicionales
+        incluían límites ajustables de velocidad y aceleración, validación de
+        entradas, un botón "GO" y gráficos en tiempo real comparando salidas
+        reales versus objetivo.
+        <p></p>
+        Este proyecto me proporcionó experiencia práctica en sistemas de control
+        y robótica industrial, además de la perspectiva de ver los sistemas
+        mecatrónicos como rompecabezas en donde las matemáticas, el código y el
+        metal deben coincidir antes de que cualquier cosa se mueva. Ver
+        finalmente el sistema en movimiento me hizo comprender que la teoría
+        compleja no es solo un trasfondo o una carga durante la implementación,
+        sino tanto el esquema lógico del sistema como la clave para entender
+        cómo y por qué funciona.
 
 contact:
   title: Contacto

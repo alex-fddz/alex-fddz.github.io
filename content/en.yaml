@@ -268,6 +268,40 @@ projects:
         client greatly appreciated features such as bread sizing trend graphs,
         and the ability to export the data for further analysis and statistics.
 
+    4bar:
+      title: Robot Motion & Control System
+      keywords: Robotics, MATLAB, Simulink, ControlDesk
+      filters: automation
+      desc:
+        As part of my 2018 internship for concluding my international exchange
+        program at INSA Rennes, I developed a control system for a 2-axis, 4-bar
+        robotic platform. The hardware was already in place, and my task was to
+        make it work. I started by studying the platform's components,
+        connections, and overall structure, and then modeled its geometry to
+        derive both direct and inverse kinematics, computing the end effector's
+        position from motor angles and vice versa. Using trigonometric analysis
+        and identifying singularities, I defined accurate geometric models of
+        the system.
+        <p></p>
+        I implemented the control logic in <code>MATLAB</code> and
+        <code>Simulink</code> and built the graphical interface using
+        <code>dSPACE ControlDesk</code>. After properly acquiring the motor
+        encoder data, I programmed smooth position, velocity, and acceleration
+        curves using 5th-degree polynomial formulas. A <code>PI</code> control
+        loop ensured the motors followed these trajectories accurately. The GUI
+        supported both direct and inverse control modes, allowing the user to
+        input either motor angles or effector coordinates. Additional features
+        included adjustable motor speed and acceleration limits, input
+        validation, a "GO" command, and live plots comparing real versus target
+        outputs.
+        <p></p>
+        This project gave me not only hands-on experience in control systems and
+        industrial robotics, but also the insight of looking at mechatronic
+        systems as puzzles where math, code and metal have to agree before
+        anything moves. Seeing the system finally move made me realize that
+        complex theory is not just background or a burden during deployment, but
+        both the blueprint of the system's logic and the key to understanding
+        how and why it works.
 
 contact:
   title: Contact me
