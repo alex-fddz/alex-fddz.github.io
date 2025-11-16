@@ -29,6 +29,7 @@ This website serves as an online portfolio where I share my experience, projects
 ```
 /project-root
 │── index.html # Main homepage
+│── projects/  # Projects gallery page
 │── content/   # Content language files
 │── assets/    # Website assets
 │ ├── css/     # Stylesheets
