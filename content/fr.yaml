@@ -116,6 +116,11 @@ projects:
   close: Fermer
   see_all: Découvrir tous mes projets
   page_title: Tous mes projets
+  filters:
+    all: Tout
+    iot: IoT
+    embedded: Embarqué
+    automation: Automatisation
 
   highlights: pycoreconf,uwb,oee
   list:

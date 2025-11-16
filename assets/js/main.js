@@ -49,6 +49,40 @@ function genProjectCard(id, project) {
   return card;
 }
 
+function genProjectFilter(filter, label) {
+  const btn = document.createElement("li");
+  btn.className = "nav-item";
+  btn.innerHTML = `
+    <button class="nav-link ${filter === "all" ? "active" : ""}"
+            data-bs-toggle="tab"
+            data-filter="${filter}">
+      ${label}
+    </button>
+  `;
+  return btn;
+}
+
+function setupProjectFilters() {
+  // Add event listener for projects page filters
+  const filterButtons = document.querySelectorAll('#filter-buttons .nav-link');
+  if (filterButtons) {
+    filterButtons.forEach(tab => {
+      tab.addEventListener('shown.bs.tab', (event) => {
+        const filter = event.target.getAttribute('data-filter');
+        const projects = document.querySelectorAll('.project-item'); // projects load later
+        projects.forEach(card => {
+          const tags = card.getAttribute('data-tags'); // e.g. "iot,automation,python"
+          if (filter === "all" || tags.includes(filter)) {
+            card.classList.remove('d-none');
+          } else {
+            card.classList.add('d-none');
+          }
+        });
+      });
+    });
+  }
+}
+
 function autoGenerateContent() {
   // Generate project highlights
   const highlights = document.getElementById("highlights");
@@ -68,6 +102,18 @@ function autoGenerateContent() {
     const addr = window.content['contact']['em'];
     emailField.href = `mailto:${addr.local}@${addr.domain}`;
     emailField.innerHTML = `${addr.local}@${addr.domain}`;
+  }
+
+  // Generate projects gallery filters
+  const filters = document.getElementById("filter-buttons");
+  if (filters) {
+    filters.innerHTML = ""; // Make sure we start blank
+    const projectsList = window.content['projects']['filters'];
+    Object.entries(projectsList).forEach(([filter, label]) => {
+      const filterBtn = genProjectFilter(filter, label);
+      filters.appendChild(filterBtn);
+    });
+    setupProjectFilters();
   }
 
   // Generate projects gallery content
@@ -186,24 +232,5 @@ document.addEventListener("DOMContentLoaded", function () {
     const current = root.getAttribute("data-bs-theme");
     setTheme(current === "dark" ? "light" : "dark", save=1);
   });
-
-  // Add event listener for projects page filters
-  const filterButtons = document.querySelectorAll('#filterButtons .nav-link');
-  if (filterButtons) {
-    filterButtons.forEach(tab => {
-      tab.addEventListener('shown.bs.tab', (event) => {
-        const filter = event.target.getAttribute('data-filter');
-        const projects = document.querySelectorAll('.project-item'); // projects load later
-        projects.forEach(card => {
-          const tags = card.getAttribute('data-tags'); // e.g. "iot,automation,python"
-          if (filter === "all" || tags.includes(filter)) {
-            card.classList.remove('d-none');
-          } else {
-            card.classList.add('d-none');
-          }
-        });
-      });
-    });
-  }
 });
 
