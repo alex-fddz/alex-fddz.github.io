@@ -166,7 +166,7 @@ function setContentLang(lang) {
     }
   });
   // Update "Get my CV" button so default is in selected language
-  const getCVBtn = document.getElementById('theme-toggle');
+  const getCVBtn = document.getElementById('getCVBtn');
   if (getCVBtn) {
     getCVBtn.href = "/downloads/FERNANDEZ_Javier_CV_" + lang.toUpperCase() + ".pdf";
   }
